@@ -18,7 +18,6 @@ const config: DocsThemeConfig = {
   },
   logoLink: "https://www.parcelcraft.com",
   project: {
-    icon: "/images/favicon-16x16.png",
     link: 'https://github.com/parcelcraft/docs',
   },
   docsRepositoryBase: 'https://github.com/parcelcraft/docs/blob/main',
