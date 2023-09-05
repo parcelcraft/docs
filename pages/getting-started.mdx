@@ -1,34 +1,12 @@
 import { Card, Cards } from 'nextra/components'
-import { IconAward } from '@tabler/icons-react';
+import { IconTimelineEventExclamation, IconAppsFilled, IconScaleOutline, IconMailForward} from '@tabler/icons-react';
 
 # Getting started
 
- To enable 1-click shipping, few default settings are required.  These default settings are optional and can be changed at any point when you're creating a label.
-
 <Cards>
-  <Card
+  <Card icon={<IconTimelineEventExclamation size={60} />} title="Requirements" href="/getting-started/requirements" />
+  <Card icon={<IconAppsFilled size={60} />} title="Installation" href="/getting-started/installation" />
 
-    title="Organize Files"
-    href="/docs/guide/organize-files"
-  />
-  <Card  title="Markdown" href="/docs/guide/markdown" />
-  <Card
-    
-    title="Syntax Highlighting"
-    href="/docs/guide/syntax-highlighting"
-  />
-  <Card  icon={<IconAward 
-    size={36}
- 
-  />} title="Next.js Link" href="/docs/guide/link" />
-  <Card  title="Next.js Image" href="/docs/guide/image" />
-  <Card  title="Next.js SSG" href="/docs/guide/ssg" />
-  <Card  title="Next.js I18n" href="/docs/guide/i18n" />
-  <Card  title="Custom CSS" href="/docs/guide/custom-css" />
-  <Card  title="Advanced" href="/docs/guide/advanced" />
-  <Card
-    
-    title="Built-in Components"
-    href="/docs/guide/built-ins"
-  />
+  <Card icon={<IconMailForward size={60} />} title="Setup Print to email" href="/getting-started/setup-print-to-email" />
+  <Card icon={<IconScaleOutline size={60} />} title="Setup a digital scale" href="/getting-started/setup-a-digital-scale" />
 </Cards>
