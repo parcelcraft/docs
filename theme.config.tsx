@@ -1,7 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Script from "next/script"
-import seo from './seo'
 
 const config: DocsThemeConfig = {
   logo: (
