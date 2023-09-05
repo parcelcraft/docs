@@ -1,16 +1,16 @@
 {
   "index": "Introduction",
-  "setup": "Getting Started",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
+  "getting-started": "",
+ 
+  "Home": {
+    "title": "Home",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "href": "https://www.parcelcraft.com"
+  },
+  "Docs": {
+    "title": "Docs",
+    "type": "page",
+    "href": "https://docs.parcelcraft.com"
   }
+  
 }
