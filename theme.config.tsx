@@ -1,6 +1,7 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Script from "next/script"
+import seo from './seo'
 
 const config: DocsThemeConfig = {
   logo: (
@@ -11,9 +12,14 @@ const config: DocsThemeConfig = {
       </span>
     </>
   ),
-
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s - Parcelcraft'
+    }
+  },
   logoLink: "https://www.parcelcraft.com",
   project: {
+    icon: "/images/favicon-16x16.png",
     link: 'https://github.com/parcelcraft/docs',
   },
   docsRepositoryBase: 'https://github.com/parcelcraft/docs/blob/main',
