@@ -1,16 +1,8 @@
-# Nextra Docs Template 
+# Parcelcraft Docs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+This is a public repository for maintaining documentation for the [Parcel Craft](https://www.parcelcraft.com) Stripe Apps Marketplace app.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+To read documentation on our website, visit [**Visit the live documentation site →**](https://www.parcelcraft.com/docs)
 
 ## Local Development
 
@@ -18,6 +10,14 @@ First, run `pnpm i` to install the dependencies.
 
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
+## Tooling
+- [StackEdit](https://stackedit.io/app#) to create markdown files
+
+
+## Submitting changes
+Edits and pull request are welcome.  A maintainer will review your pull request and merge it, or request changes if necessary.
+
 ## License
 
 This project is licensed under the MIT License.
+
