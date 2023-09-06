@@ -1,6 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import Script from "next/script"
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 declare global {
   interface Window {
@@ -30,16 +30,7 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/parcelcraft/docs/blob/main',
   head: (
     <>
-     <Script src="https://www.googletagmanager.com/gtag/js?id=G-24X875LHXS" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-24X875LHXS');
-        `}
-      </Script>
+    <GoogleAnalytics trackPageViews />
 
       <link rel="shortcut icon" href="/images/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
