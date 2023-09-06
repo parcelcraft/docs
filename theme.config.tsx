@@ -2,6 +2,13 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Script from "next/script"
 
+declare global {
+  interface Window {
+    dataLayer: any[]; // Define the type of dataLayer as an array of any
+  }
+}
+
+
 const config: DocsThemeConfig = {
   logo: (
     <>
@@ -23,23 +30,16 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/parcelcraft/docs/blob/main',
   head: (
     <>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-24X875LHXS"></script>
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX" />
-      <Script
-        id='google-analytics'
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+     <Script src="https://www.googletagmanager.com/gtag/js?id=G-24X875LHXS" />
+      <Script id="google-analytics">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-24X875LHXS', {
-            page_path: window.location.pathname,
-          });
-        `,
-        }}
-      />
+ 
+          gtag('config', 'G-24X875LHXS');
+        `}
+      </Script>
 
       <link rel="shortcut icon" href="/images/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
