@@ -4,7 +4,7 @@ This is a public repository for maintaining documentation for the [Parcel Craft]
 
 To read documentation on our website, visit [**Visit the live documentation site →**](https://www.parcelcraft.com/docs)
 
-Based on the [Nextra docs theme](https://nextra.site/docs/docs-theme/start);
+Based on the [Nextra docs theme](https://nextra.site/docs/docs-theme/start).
 
 ## Local Development
 
