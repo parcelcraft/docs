@@ -11,6 +11,14 @@
     "title": "Docs",
     "type": "page",
     "href": "https://docs.parcelcraft.com"
+  },
+  "---": {
+    "type": "separator"
+  },
+  "canny_link": {
+    "title": "Request or vote for new features in Parcelcraft",
+    "href": "https://parcelcraft.canny.io/feature-requests",
+    "newWindow": true
   }
   
 }

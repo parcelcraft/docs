@@ -21,7 +21,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
     project: {
       link: 'https://github.com/parcelcraft/docs',
     },
-    navbar: { extraContent: (<a href='https://parcelcraft.canny.io/feature-requests'> Request or vote for new features</a>)},
+
     docsRepositoryBase: 'https://github.com/parcelcraft/docs/blob/main',
     head: (
       <>
