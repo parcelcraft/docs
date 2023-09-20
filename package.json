@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "dependencies": {
     "@tabler/icons-react": "^2.32.0",
     "next": "^13.4.19",
+    "next-sitemap": "^4.2.3",
     "nextjs-google-analytics": "^2.3.3",
     "nextra": "latest",
     "nextra-theme-docs": "latest",

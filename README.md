@@ -13,13 +13,13 @@ First, run `pnpm i` to install the dependencies.
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
 ## Tooling
+
 - [StackEdit](https://stackedit.io/app#) to create markdown files
 
-
 ## Submitting changes
+
 Edits and pull request are welcome.  A maintainer will review your pull request and merge it, or request changes if necessary.
 
 ## License
 
 This project is licensed under the MIT License.
-
