@@ -1,6 +1,7 @@
 {
     "requirements": "",
     "installation": "",
+    "setup-easypost": "EasyPost API key and billing setup",
     "setup-print-to-email": "Setup print to email",
     "setup-a-digital-scale": "Setup a digital scale"
   }
