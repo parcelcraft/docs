@@ -1,7 +1,7 @@
 {
-    "requirements": "",
-    "installation": "",
+    "open-stripe": "",
+    "install-parcelcraft": "",
     "setup-easypost": "EasyPost API key and billing setup",
-    "setup-print-to-email": "Setup print to email",
-    "setup-a-digital-scale": "Setup a digital scale"
-  }
+    "enter-warehouse": "Enter Shipment Origin (Warehouse)",
+    "print-test-label": ""
+}
