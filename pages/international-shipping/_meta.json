@@ -1,5 +1,6 @@
 {
     "international-product-defaults": "",
     "international-tax-settings": "",
-    "international-shipping-defaults": ""
+    "international-shipping-defaults": "",
+    "international-test-label": ""
 }

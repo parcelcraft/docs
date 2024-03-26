@@ -1,6 +1,7 @@
 {
     "open-stripe": "",
     "install-parcelcraft": "",
+    "accessing-settings-menu": "Accessing the Parcelcraft Settings",
     "setup-easypost": "EasyPost API key and billing setup",
     "enter-warehouse": "Enter Shipment Origin (Warehouse)",
     "print-test-label": ""

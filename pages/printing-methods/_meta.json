@@ -1,5 +1,4 @@
 {
     "print-downloaded-labels": "",
-    "printnode": "PrintNode",
-    "setup-print-to-email": ""
+    "printnode": "PrintNode"
 }
