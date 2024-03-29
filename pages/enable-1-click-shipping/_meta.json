@@ -1,7 +1,8 @@
 {
     "setup-stripe-invoicing": "",
-    "setup-printnode-account": "Setup PrintNode Account",
+    "setup-printnode-account": "PrintNode Account Setup",
+    "connect-printnode": "Connect Your PrintNode Account",
+    "set-printing-defaults": "",
     "set-product-defaults": "",
-    "set-shipping-rate-defaults": "",
-    "set-printing-defaults": ""
+    "set-shipping-rate-defaults": ""
 }
