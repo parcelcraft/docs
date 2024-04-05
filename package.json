@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "preinstall": "rimraf ./out && rimraf ./.next",
-    "build": "next build && next export",
+    "build": "rimraf ./out && rimraf ./.next && next build && next export",
     "postbuild": "next-sitemap",
     "start": "next start"
   },
