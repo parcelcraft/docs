@@ -2,6 +2,6 @@
     "setup-stripe-invoicing": "",
     "setup-printnode-account": "PrintNode Account Setup",
     "connect-printnode": "Connect Your PrintNode Account",
-    "set-carrier-defaults": "",
-    "set-shipping-rate-defaults": ""
+    "set-product-defaults": "Define Shippable Products",
+    "set-carrier-defaults": ""
 }
