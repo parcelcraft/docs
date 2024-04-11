@@ -29,10 +29,40 @@ PrintNode is a cloud printing service that allows you to connect your printers t
 
 > **Note:** If you want to continue using the free "Lite" plan after the 30-day PrintNode trial, make sure to select "Lite" before proceeding.
 
-## Step 4: Link PrintNode to Parcelcraft
+## Step 4: Obtain Your PrintNode API Key
 
-Now that your PrintNode account is set up and configured, you can [link it to your Parcelcraft account](/enable-1-click-shipping/connect-printnode) to enable automatic printing of shipping labels and forms.
+1. Log in to your PrintNode account and click on the [API Keys link](https://api.printnode.com/app/apikeys) at the top of the page.
+2. Enter your PrintNode password when prompted.
+3. Select and copy your API key to your clipboard. If you don't have one, enter an API key description and click the **Create** button.
+
+> **Note:** Make sure to keep your API key secure and do not share it with anyone, as it grants access to your PrintNode account.
+
+## Step 5: Enter Your PrintNode API Key in Parcelcraft
+
+1. Go to the [Parcelcraft Settings page](https://dashboard.stripe.com/settings/apps/com.productivity.parcelcraft).
+2. Click on the "Printers & digital scale" tab.
+3. Locate the "Use PrintNode to send label files directly to my printer" option and toggle it on.
+
+![PrintNode API Key in Parcelcraft](/public/images/printnode-api-key-in-parcelcraft.png)
+
+4. Paste the API key you copied from PrintNode into the provided box.
+
+## Step 6: Configure Your Printer Settings
+
+1. After entering your PrintNode API key, you will see a list of available printers associated with your PrintNode account.
+
+![Select PrintNode Printers](/public/images/printnode-select-printers.png)
+
+2. Select a printer for printing shipping labels and another printer for printing forms (if applicable).
+3. Adjust the related settings, such as label size and orientation, to match your printer's requirements.
+
+## Step 7: Test Your Printer Setup
+
+1. Click on the "Print Test label" and "Print test form" buttons to ensure that your printers are properly connected and configured.
+2. Verify that the test pages are printed correctly on the selected printers.
+
+Congratulations! You have now successfully connected your PrintNode account to Parcelcraft. This integration allows you to seamlessly manage your printers and automate the printing process for shipping labels and forms.
+
+> **Tip:** If you want to further automate your shipping workflow, consider [linking a digital scale](/additional-automation/setup-a-digital-scale) to your Parcelcraft account. This will enable automatic weight capture and streamline the label creation process even more.
 
 > **Tip:** If you encounter any issues during the PrintNode setup process or have questions about the integration with Parcelcraft, don't hesitate to reach out to our support team at [support@parcelcraft.com](mailto:support@parcelcraft.com) for assistance.
-
-By following these steps, you'll be ready to take advantage of the seamless integration between PrintNode and Parcelcraft, streamlining your shipping workflow and saving time and effort.
