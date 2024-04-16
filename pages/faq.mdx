@@ -13,3 +13,6 @@ A: If you hover your mouse over the **1-click ship** button, you will see a popu
 
 A: The FedEx ground carrier account (known as Fedex Default in your EasyPost dashboard) is limited in the types of service it offers.  Add a FedEx account by adding a FedEx carrier in the EasyPost dashboard to enable quotes and shipments for overnight shipping.
 
+### Q: Why don't invocies show up in my unshipped invoices list?
+
+A: When an invoice is created, our Parcelcraft server will investigate if an invoice is shippable. 1) If there is a shipping rate attached to the invoice it will appear in your unshippped invoice list. 2) If any product in your invoice is shippable it will appear in your unshipped invoice list. This calculation only happens at the invoice creation event.  If invoices that should be shippable are not appearing in your unshipped invoice list, browse to your product listing and ensure the product is marked as "shippable" in the Parcelcraft app. To add an invoice to your unshipped invoice list manually, browse to your invoice in Stripe and change the invoice status to "unshipped" or add metadata to your Stripe invoice with a key of "ship_status" and a value of "unshipped".  Due to a limitation of the Stripe search Invoices AudioParam, you'll need to wait about 30 seconds before the invoice appears in the unshipped invoices FileList.
