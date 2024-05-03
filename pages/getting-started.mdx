@@ -21,11 +21,14 @@ To use Parcelcraft for real shipping labels you'll also need to enter your [bill
 
 ## Get your own negotiated carrier rates
 
-You can use EasyPost's default carrier accounts or [add your own carrier accounts](https://www.easypost.com/account/settings?tab=carriers&utm_source=Parcelcraft) to get your negotiated rates.
+You can use EasyPost's default carrier accounts or [add your own carrier accounts](https://www.easypost.com/account/settings?tab=carriers&utm_source=Parcelcraft) to get your negotiated rates. After you add your custom carrier accounts in EasyPost, refresh your Parcelcraft Shipping app in Stripe to see you latest shipping options
 
 
 
 -----
+
+## Common questions on this page:
+
 #### Yikes! I don't even have a Stripe account! What the H-double-hockey-sticks is that?
 
 If you don't have a Stripe account yet, setting one up is a simple process:
@@ -33,3 +36,11 @@ If you don't have a Stripe account yet, setting one up is a simple process:
 1. Visit [**Stripe.com**](https://dashboard.stripe.com/register) to create your account.
 2. Follow the prompts to provide your business information and complete the registration process.
 3. Once your account is set up, you'll be ready to install and start using Parcelcraft.
+
+#### Does printing test labels cost anything?
+
+Nope! Printing test labels are completely free, but you cant use them for real shipping without seriously pissing off your carrier. They might put you on a blacklist.
+
+#### I want to test Parcelcraft from a purely API angle. 
+
+Parcelcraft crates test and production labels that integrate directly into the EasyPost API.  We also prepare shipments by changing the metadata of invoices with a key of `ship_status` and a value of `unshipped` to add them to your unshipped invoices list in the Parcelcraft Shipping app using the Stripe API. Parcelcraft prefers `Stripe Invoices` data since this data they provides all the `Product` and `Shipment Rates` needed to calculate the domestic weight or the customs terms of your shipments. 
