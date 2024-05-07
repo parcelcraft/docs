@@ -23,3 +23,16 @@ A: When an invoice is created, our Parcelcraft server will investigate if an inv
 This calculation only happens at the invoice creation event.  If invoices that should be shippable are not appearing in your unshipped invoice list, browse to your products used in your invoice.   Open the Parcelcraft Shipping app and confirm the products used in your invoice are marked as "shippable" in the Parcelcraft app. 
 
 To add an invoice to your unshipped invoice list manually, browse to your invoice in Stripe and change the invoice status to "unshipped" in the Parcelcraft app, or add metadata to your Stripe invoice with a key of "ship_status" and a value of "unshipped".  Due to a limitation of the Stripe search Invoices API, you'll need to wait about 30 seconds before the invoice appears in the unshipped invoices list.
+
+If you're more programmically inclined,  invoices with a `metadata` with a key of `ship_status` and a value of `unshipped` will appear in your unshipped invoices list.
+
+#### Does printing test labels cost anything?
+
+Nope! Printing test labels are completely free, but you cant use them for real shipping without seriously pissing off your carrier. They might put you on a blacklist.
+
+#### I want to test Parcelcraft from a purely API angle. 
+
+Parcelcraft creates test and production labels that integrate directly into the EasyPost API. 
+
+
+ 

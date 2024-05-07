@@ -31,7 +31,11 @@ You can use EasyPost's default carrier accounts or [add your own carrier account
 
 ## Common questions on this page:
 
-####  I don't even have a Stripe account
+#### I can't find my EasyPost API key
+
+If you can't find you EasyPost API key [in your EasyPost account on this page](https://www.easypost.com/account/settings?tab=api-keys), you'll need to contact [EasyPost Support](https://support.easypost.com/hc/en-us/requests/new) to ask them to enable API Keys on your account.
+
+####  I don't have a Stripe account
 
 If you don't have a Stripe account yet, setting one up is a simple process:
 
@@ -39,10 +43,3 @@ If you don't have a Stripe account yet, setting one up is a simple process:
 2. Follow the prompts to provide your business information and complete the registration process.
 3. Once your account is set up, you'll be ready to [install](https://marketplace.stripe.com/apps/parcelcraft-shipping) and start using Parcelcraft.
 
-#### Does printing test labels cost anything?
-
-Nope! Printing test labels are completely free, but you cant use them for real shipping without seriously pissing off your carrier. They might put you on a blacklist.
-
-#### I want to test Parcelcraft from a purely API angle. 
-
-Parcelcraft creates test and production labels that integrate directly into the EasyPost API.  We pre-prepare shipments by changing the `metadata` of Stripe `invoices` with a key of `ship_status` and a value of `unshipped` based on your product `shippable` status and if you have a `Shipping Rate` attached to your invoice.  If any product in your invoice is shippable, or if you have a shipping rate attached to your invoice, it will show up in your unshipped invoices list in the Parcelcraft Shipping app. Parcelcraft prefers `Stripe Invoices` data since this data provides all the `Product` and `Shipment Rates` data needed to calculate the domestic weight or the customs terms of your shipments. 
