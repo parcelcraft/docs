@@ -1,7 +1,6 @@
 {
     "install-parcelcraft": "",
-    "setup-easypost": "EasyPost Account Setup",
-    "connect-easypost": "Connect your EasyPost Account",
+    "connect-easypost": "Connect your EasyPost account",
     "enter-origin-address": "Enter Origin Address",
     "print-test-label": ""
 }
