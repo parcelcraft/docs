@@ -13,14 +13,15 @@ A: If you hover your mouse over the **1-click ship** button, you will see a popu
 
 A: The FedEx ground carrier account (known as Fedex Default in your EasyPost dashboard) is limited in the types of service it offers.  Add a FedEx account by adding a FedEx carrier in the EasyPost dashboard to enable quotes and shipments for overnight shipping.
 
-### Q: Why don't invocies show up in my unshipped invoices list?
+### Q: Why don't my invoices appear in my unshipped invoices list?
 
 A: When an invoice is created, our Parcelcraft server will investigate if an invoice is shippable:
 
 1. If there is a shipping rate attached to the invoice it will appear in your unshippped invoice list.
 2. If any product in your invoice is shippable it will appear in your unshipped invoice list. 
+3. Your default product "shippable" setting will be used if you haven't selected a shippable status for your product
 
-This calculation only happens at the invoice creation event.  If invoices that should be shippable are not appearing in your unshipped invoice list, browse to your products used in your invoice.   Open the Parcelcraft Shipping app and confirm the products used in your invoice are marked as "shippable" in the Parcelcraft app. 
+This calculation only happens when your invoice is finalized.  If invoices that should be shippable are not appearing in your unshipped invoice list, browse to your products used in your invoice.   Open the Parcelcraft Shipping app and confirm the products used in your invoice are marked as "shippable" in the Parcelcraft app. 
 
 To add an invoice to your unshipped invoice list manually, browse to your invoice in Stripe and change the invoice status to "unshipped" in the Parcelcraft app, or add metadata to your Stripe invoice with a key of "ship_status" and a value of "unshipped".  Due to a limitation of the Stripe search Invoices API, you'll need to wait about 30 seconds before the invoice appears in the unshipped invoices list.
 
@@ -28,7 +29,7 @@ If you're more programmically inclined,  invoices with a `metadata` with a key o
 
 #### Does printing test labels cost anything?
 
-Nope! Printing test labels are completely free, but you cant use them for real shipping without seriously pissing off your carrier. They might put you on a blacklist.
+No, printing test labels is completely free. However, please note that these labels are for testing purposes only and cannot be used for actual shipping. Misusing test labels for real shipments can result in serious consequences from your carrier, including the possibility of being blacklisted.
 
 #### I want to test Parcelcraft from a purely API angle. 
 
