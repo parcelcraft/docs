@@ -3,6 +3,13 @@
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
 ---
+# 0.5.0  <span style={{fontSize: "16px"}}>June 13, 2024</span>
+
+- Feature:  Add the ability to add a product or invoice with a metadata key of "is_return" and a value of "true" to default to create a return shipment
+- Fixed: Invoice were not being marked as unshipped by our backend server in test and live mode
+- Fixed: Return shipping labels were incorrectly generated with the wrong to and from address.
+
+---
 # 0.4.11  <span style={{fontSize: "16px"}}>June 10, 2024</span>
 
 - Fixed: Shipments created from Customer and Payments were not saving their id as a reference and would incorrectly show that there was no payment or customer data associated with a shipment in the shipment history view
