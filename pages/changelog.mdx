@@ -3,9 +3,10 @@
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
 ---
-# 0.5.0  <span style={{fontSize: "16px"}}>June 13, 2024</span>
+# 0.5.0  <span style={{fontSize: "16px"}}>June 14, 2024</span>
 
 - Feature:  Add the ability to add a product or invoice with a metadata key of "is_return" and a value of "true" to default to create a return shipment
+- Feature:  Stripe invoices with a metadata key of **is_return** and a value of **true** will automatically be tagged as a return shipemnt. This will also work for any product appearing in the invoice with the same metadata values.
 - Fixed: Invoice were not being marked as unshipped by our backend server in test and live mode
 - Fixed: Return shipping labels were incorrectly generated with the wrong to and from address.
 
