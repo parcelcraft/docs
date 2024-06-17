@@ -2,28 +2,48 @@
 
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
+
+---
+# 0.6.1  <span style={{fontSize: "16px"}}>June 17, 2024</span>
+
+- Feature: Add shipment_id metadata to invoices and payments when a shipment is created
+- Feature: Improved payment detail view with ship status control, and payment description. Added a ship status and "manage shipment button" in the payment detail view
+- Feature: Payments and Invoices Stripe Objects now mirror each other's shipment details metadata at shipment creation event.
+- Feature: Ability to control **payment** ship_status metadata from app
+- Feature: Better ship status badges when in test mode
+- Feature: Shipments that are return shipments are clearly labeled in the shipment history
+- Feature: Email notifications now have carrier QR codes (when supported by carrier) for users who have selected "print to email" and to user's return shipment email notifications if the user has no printer (based on carrier support for QR codes)
+- Feature: Change "Buy label" button text to "Buy return label" to clearly indicate to the user which type of label they are purchasing
+- Feature: Add the ability to print source label image in email notifications and in the print window if PDF formatting is wonky.
+- Fixed: Faster label generation when creating test labels or buying labels
+- Fixed: Print to email would not work in all cases
+- Fixed: Sometimes a return shipment would be created by default incorrectly
+- Fixed: When creating a shipment sometimes the package settings box disappears in some edge cases
+- Fixed: The origin address was not displaying correctly in the verify address view "ship from " dropdown
+- Fixed: Incorrect options and notifications were shown if PrintNode was selected as a printer and no PrintNode API key was provided
+
 ---
 # 0.5.0  <span style={{fontSize: "16px"}}>June 14, 2024</span>
 
 - Feature:  Add the ability to add a product or invoice with a metadata key of "is_return" and a value of "true" to default to create a return shipment
-- Feature:  Stripe invoices with a metadata key of **is_return** and a value of **true** will automatically be tagged as a return shipemnt. This will also work for any product appearing in the invoice with the same metadata values.
-- Fixed: Invoice were not being marked as unshipped by our backend server in test and live mode
+- Feature:  Stripe invoices with a metadata key of **is_return** and a value of **true** will automatically be tagged as a return shipment. This will also work for any product appearing in the invoice with the same metadata values.
+- Fixed: Invoices were not being marked as unshipped by our backend server in test and live mode
 - Fixed: Return shipping labels were incorrectly generated with the wrong to and from address.
 
 ---
 # 0.4.11  <span style={{fontSize: "16px"}}>June 10, 2024</span>
 
-- Fixed: Shipments created from Customer and Payments were not saving their id as a reference and would incorrectly show that there was no payment or customer data associated with a shipment in the shipment history view
-- Fixed: Settings for carrier defaults were not saving, and once a carrier was selected, the incorrect Service and Package options were shown.
+- Fixed: Shipments created from Customer and Payments were not saving their ID as a reference and would incorrectly show that there was no payment or customer data associated with a shipment in the shipment history view
+- Fixed: Settings for carrier defaults were not saving, and once a carrier was sSelected, the incorrect Service and Package options were shown.
 - Feature: Improved error reporting for when a shipment settings did not meet the requirements for a valid shipment
 
 
 ---
 # 0.4.8  <span style={{fontSize: "16px"}}>May 7, 2024</span>
 
-- Fixed an issue the prevented Invoice ship status from being updated
+- Fixed an issue that prevented Invoice ship status from being updated
 - Added a warning in the Settings view if no EasyPost Test API key is found on the account
-- Improved onboarding docs for connecting EasyPost account
+- Improved onboarding docs for connecting the WEasyPost account
 - Fixed an issue in Carrier Settings that prevented the correct Service and Package options from being displayed when a carrier selection is made
 
 
