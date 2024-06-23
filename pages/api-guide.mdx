@@ -1,6 +1,6 @@
 # API Guide
 
-> Note: this article refers how we interact with the Stripe API, for info on getting your EasyPost API key, see [Connect Your EasyPost Account to Parcelcraft](/getting-started/connect-easypost).
+> Note: this article refers how we interact with the Stripe API, for info on getting your EasyPost API key, see [Connect Your EasyPost API key to Parcelcraft](/getting-started/connect-easypost).
 
 Parcelcraft doens't require any software programming skills to use, but for those who have a need to interact with Parcelcraft programmically, we have a variety of ways to interact with your shipment data.  Parcelcraft makes extensive use of the Stripe API and the EasyPost API. 
 
@@ -11,7 +11,7 @@ Parcelcraft adds metadata to your PaymentIntenets, Invoices, Shipping Rates and 
 ## Stripe Invoice and PaymentIntents metadata
 
 
-When an invoice is created, our app automatically will access if the invoice you've created is for a physical product or for a service.  We use your Stripe Product shippable status, or if you've selected a shipping rate as part of your invoice to determine if an invoice is shippable.
+When an invoice is created, our app automatically will determine if the invoice you've created is for a physical product or for a service.  We use your Stripe Product shippable status, or if you've selected a shipping rate as part of your invoice to indicate via your Stripe metadata if an invoice is shippable.
 Our app will automatically add metadata to Stripe invoices prior to shipment.  If an invoice uses a shipping rate or if any product in the invoice is shippable, metadata with a key of "ship_status" and a value of "unshipped" will be added to your invoice metadata.  Invoices that are marked as unshipped will appear in your unshipped invoices list in Parcelcraft.
 
 
@@ -29,13 +29,13 @@ Supported metatdata prior to shipment
 
 ### After shipment
 
-PaymentIntents will mirror each other's metadata values at the time of shipment.  If no invoice exists for a paymentIntent, only the paymentIntent metadata will reflect these values
+PaymentIntents and Invoices will mirror each other's metadata values at the time of shipment.  If no invoice exists for a paymentIntent, only the paymentIntent metadata will reflect these values:
 
 
 |Metadata key| Metadata value example  |
 |--|--|
 | ship_date | **2024-05-24T18:07:34Z** |
- | ship_status | **shipped** (Could be value of unshipped, cancelled, back_ordered or metdata key is missing if unshippable prior to shipment) |
+ | ship_status | **shipped** (Could be value of unshipped, cancelled, back_ordered.  The ship_status metadata will not exist if invoice or payment is considered to be non-shippable) |
  | shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
  | tracking_number | **9434600110368044455854** |
  | tracking_URL | **https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854**  |
@@ -44,3 +44,28 @@ PaymentIntents will mirror each other's metadata values at the time of shipment.
 
 
 
+## Product metadata
+
+All values are optional, but having product defaults help prepare your shipment according to your product metadata.
+
+|Metadata key| Metadata value example  |
+|--|--|
+| customs_description | SIM card |
+| origin_country | US |
+| tariff_code | 8523.52.00 |
+| weight | 0.44 |
+| weight_unit | Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to ounces |
+| is_return | <span className="code">**true**</span> Defaults to null or false |
+
+
+## Shipping rate metadata
+
+All values are optional, but having product defaults help prepare your shipment according to your shipping rate metadata, if you use shipping rates in your Stripe Invoices.
+
+|Metadata key| Metadata value example  |
+|--|--|
+| carrier_id | ca_c38cd24... (Your EasyPost carrier id) |
+| package_code | Letter (The package code for your EasyPost carrier. Defaults to <span className="code">**package**</span>)  | 
+| packaging_weight | | .26 |
+| packaging_weight_unit | Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to ounces |
+| service_code | FirstClassMailInternational (The compatible service code for your EasyPost carrier) |
