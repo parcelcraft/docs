@@ -1,0 +1,44 @@
+# API Guide
+
+Parcelcraft doens't require any software programming skills to use, but for those who have a need to interact with Parcelcraft programmically, we have a variety of ways to interact with your shipment data.  Parcelcraft makes extensive use of the Stripe API and the EasyPost API. 
+
+#### Stripe API
+
+Parcelcraft adds metadata to your PaymentIntenets, Invoices, Shipping Rates and Products to manage shipment status and default options
+
+## Stripe Invoice and PaymentIntents metadata
+
+
+When an invoice is created, our app automatically will access if the invoice you've created is for a physical product or for a service.  We use your Stripe Product shippable status, or if you've selected a shipping rate as part of your invoice to determine if an invoice is shippable.
+Our app will automatically add metadata to Stripe invoices prior to shipment.  If an invoice uses a shipping rate or if any product in the invoice is shippable, metadata with a key of "ship_status" and a value of "unshipped".  Invoices that are marked as unshipped will appear in your unshipped invoices list in Parcelcraft.
+
+
+
+### Prior to shipment
+
+Supported metatdata prior to shipment
+
+
+|Metadata key|Possible metadata values  |
+|--|--|
+| ship_status |<span className="code">unshipped</span> The invoice will appear in your unshipped invoices list <br/><span className="code">cancelled</span> The invoice will appear in your cancelled invoices list  <br/><span className="code">cancelled</span> The invoice will appear in your cancelled invoices list <br/><span className="code">back_ordered</span> The invoice will appear in your backordred invoices list <br/><span className="code">(no value)</span> We assume this is a non-shippable invoice or the status has not been determined <br/>|
+|is_return  |<span className="code">**true**</span> (as a string) when a shipment is created, the shipment will be created as a return shipment by default |
+
+
+### After shipment
+
+PaymentIntents will mirror each other's metadata values at the time of shipment.  If no invoice exists for a paymentIntent, only the paymentIntent metadata will reflect these values
+
+
+|Metadata key| Metadata value example  |
+|--|--|
+| ship_date | **2024-05-24T18:07:34Z** |
+ | ship_status | **shipped** (Could be value of unshipped, cancelled, back_ordered or metdata key is missing if unshippable prior to shipment) |
+ | shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
+ | tracking_number | **9434600110368044455854** |
+ | tracking_URL | **https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854**  |
+ | service_name | **USPS Ground Advantage** |
+|is_return  | <span className="code">**true**</span> (as a string) the shipment was a **return label** (this metadata key will be absent if the shipment was not a return shipment) |
+
+
+
