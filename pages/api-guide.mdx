@@ -75,7 +75,9 @@ All values are optional, but having product defaults help prepare your shipment 
 
 ## Stripe Customer metadata
 
-Tip: ask for a company name with a custom field in your checkout flow.  Some addresses (for example shared office spaces) may require a company name for a successful shipment.
+- Some addresses (for example shared office spaces) may require a company name for a successful shipment. 
+- If your Stripe customer record has a <span className="code">company</span> metadata value, we'll automatically add that to the customer's shipping address when you create a shipment.
+- Tip: Add a custom field called "company" in your stripe payment links or checkout sessions, then use that data to modify your Stripe customer's metadata.
 
 |Metadata key| Metadata value example  |
 |--|--|
