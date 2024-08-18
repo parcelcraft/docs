@@ -64,8 +64,19 @@ All values are optional, but having product defaults help prepare your shipment 
 
 |Metadata key| Metadata value example  |
 |--|--|
-| carrier_id | ca_c38cd24... (Your EasyPost carrier id) |
-| package_code | Letter (The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span>)  | 
-| packaging_weight | .26 |
+| carrier_id | <span className="code">ca_c38cd24...</span> (Your EasyPost carrier id) |
+| package_code | <span className="code">Letter</span> (The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span>)  | 
+| packaging_weight | <span className="code">.26</span> |
 | packaging_weight_unit | Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to ounce |
-| service_code | FirstClassMailInternational (The compatible service code for your EasyPost carrier) |
+| service_code | <span className="code">FirstClassMailInternational</span> (The compatible service code for your EasyPost carrier) |
+| width | <span className="code">10</span> The default packaging width for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
+| length | <span className="code">5</span> The default packaging length for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
+| height | <span className="code">8</span> The default packaging height for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
+
+## Stripe Customer metadata
+
+Tip: ask for a company name with a custom field in your checkout flow.  Some addresses (for example shared office spaces) may require a company name for a successful shipment.
+
+|Metadata key| Metadata value example  |
+|--|--|
+| company | <span className="code">Acme Incorporated</span> |
