@@ -62,22 +62,22 @@ All values are optional, but having product defaults help prepare your shipment 
 
 All values are optional, but having product defaults help prepare your shipment according to your shipping rate metadata, if you use shipping rates in your Stripe Invoices.
 
-|Metadata key| Metadata value example  |
-|--|--|
-| carrier_id | <span className="code">ca_c38cd24...</span> (Your EasyPost carrier id) |
-| package_code | <span className="code">Letter</span> (The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span>)  | 
-| packaging_weight | <span className="code">.26</span> |
-| packaging_weight_unit | Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to ounce |
-| service_code | <span className="code">FirstClassMailInternational</span> (The compatible service code for your EasyPost carrier) |
-| width | <span className="code">10</span> The default packaging width for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
-| length | <span className="code">5</span> The default packaging length for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
-| height | <span className="code">8</span> The default packaging height for this shipping rate (in the dimension unit as set in your settings, defaults to inch) |
+|Metadata key| Example  | Description |
+|--|--|--|
+| carrier_id | <span className="code">ca_c38cd24...</span> | Your EasyPost carrier id |
+| package_code | <span className="code">Letter</span> | The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span> ee https://www.easypost.com/carriers   | 
+| packaging_weight | <span className="code">.26</span> | The weight of your packaging.  The final weight of your package will be based on your product weight and product quantity |
+| packaging_weight_unit |  <span className="code">**ounce**</span> |  Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to <span className="code">**ounce**</span> |
+| service_code | <span className="code">Priority</span> | The compatible service level (Ground, Priority NextDayAir) for your EasyPost carrier. See https://www.easypost.com/carriers  |
+| width | <span className="code">10</span> | The default packaging width in the dimension unit (inches or centimeters )as set in your Parcelcraft carrier settings |
+| length | <span className="code">5</span> | See above |
+| height | <span className="code">8</span> |  See above |
 
 ## Stripe Customer metadata
 
 - Some addresses (for example shared office spaces) may require a company name for a successful shipment. 
 - If your Stripe customer record has a <span className="code">company</span> metadata value, we'll automatically add their company name to the customer's shipping address when you create a shipment.
-- Tip: Add a custom field called "company" in your stripe payment links or checkout sessions, then use that data to modify your Stripe customer's metadata.
+- Tip: Add a custom field called "company" in your Stripe payment links or checkout sessions, then use that data to modify your Stripe customer's metadata.
 
 |Metadata key| Metadata value example  |
 |--|--|
