@@ -35,11 +35,11 @@ PaymentIntents and Invoices will mirror each other's metadata values at the time
 |Metadata key| Metadata value example  |
 |--|--|
 | ship_date | **2024-05-24T18:07:34Z** |
- | ship_status | **shipped** (Could be value of unshipped, canceled, back_ordered.  The ship_status metadata will not exist if invoice or payment is considered to be non-shippable) |
- | shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
- | tracking_number | **9434600110368044455854** |
- | tracking_URL | **https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854**  |
- | service_name | **USPS Ground Advantage** |
+| ship_status | **shipped** (Could be value of unshipped, canceled, back_ordered.  The ship_status metadata will not exist if invoice or payment is considered to be non-shippable) |
+| shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
+| tracking_number | **9434600110368044455854** |
+| tracking_URL | **https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854**  |
+| service_name | **USPS Ground Advantage** |
 |is_return  | <span className="code">**true**</span> (as a string) the shipment was a **return label** (this metadata key will be absent if the shipment was not a return shipment) |
 
 
@@ -65,7 +65,7 @@ All values are optional, but having product defaults help prepare your shipment 
 |Metadata key| Example  | Description |
 |--|--|--|
 | carrier_id | <span className="code">ca_c38cd24...</span> | Your EasyPost carrier id |
-| package_code | <span className="code">Letter</span> | The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span> ee https://www.easypost.com/carriers   | 
+| package_code | <span className="code">Letter</span> | The package code for your EasyPost carrier. Defaults to <span className="code">**Package**</span>. See https://www.easypost.com/carriers   | 
 | packaging_weight | <span className="code">.26</span> | The weight of your packaging.  The final weight of your package will be based on your product weight and product quantity |
 | packaging_weight_unit |  <span className="code">**ounce**</span> |  Either <span className="code">**gram**</span>, <span className="code">**ounce**</span>, <span className="code">**pound**</span>, or <span className="code">**kilogram**</span>.  Defaults to <span className="code">**ounce**</span> |
 | service_code | <span className="code">Priority</span> | The compatible service level (Ground, Priority NextDayAir) for your EasyPost carrier. See https://www.easypost.com/carriers  |
