@@ -7,6 +7,7 @@ const withNextra = require('nextra')({
 })
 //Next.js config 
 module.exports = withNextra({
-  output: 'export'
+  output: 'export',
+  distDir: '.next',
 }
 )
