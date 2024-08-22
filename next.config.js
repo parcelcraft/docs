@@ -5,5 +5,8 @@ const withNextra = require('nextra')({
     unoptimized: true,
   },
 })
-
-module.exports = withNextra()
+//Next.js config 
+module.exports = withNextra({
+  output: 'export'
+}
+)
