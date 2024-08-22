@@ -10,5 +10,7 @@ const withNextra = nextra({
 
 //Next.js config 
 export default withNextra({
-  reactStrictMode: true
+  reactStrictMode: true,
+  output: 'export',
+  distDir: '.next',
 })
