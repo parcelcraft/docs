@@ -7,6 +7,7 @@ const withNextra = nextra({
     unoptimized: true,
   },
 })
+
 //Next.js config 
 export default withNextra({
   reactStrictMode: true
