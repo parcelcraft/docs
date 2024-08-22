@@ -8,6 +8,6 @@ const withNextra = require('nextra')({
 //Next.js config 
 module.exports = withNextra({
   output: 'export',
-  distDir: '.next',
+  distDir: '.next'
 }
 )
