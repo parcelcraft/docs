@@ -11,7 +11,7 @@ You can let Parcelcraft send your customers a generic email with tracking inform
 
 ## Configure SendGrid
 
-In SendGrid, add add a verified Sender, unsubscribe groups and create a dynamic template for a customer Shipping Notification, Canceled Shipment notification, and a return shipment notification
+In SendGrid, add a verified Sender, unsubscribe groups and create a dynamic template for a customer Shipping Notification, Canceled Shipment notification, and a return shipment notification
 1.  [Add a verified Sender](https://docs.sendgrid.com/ui/sending-email/sender-verification#adding-a-sender "Adding a Sender")
 2. [Create an Unsubscribe Group](https://docs.sendgrid.com/ui/sending-email/create-and-manage-unsubscribe-groups#create-an-unsubscribe-group "Create an Unsubscribe Group")
 3. [Create a dynamic template](https://sendgrid.com/en-us/blog/how-to-use-sendgrids-dynamic-templates-for-your-transactional-emails "Create a dynamic template")
@@ -77,7 +77,7 @@ Your friendly shipping robot
 
 ### Test data
 
-You can test your variables in your SendGrid Preview by using this test data. All email notifications will recieve a similar payload to this. In SendGrid on your Template view, click 'Preview' and enter this test data:
+You can test your variables in your SendGrid Preview by using this test data. All email notifications will receive a similar payload to this. In SendGrid on your Template view, click 'Preview' and enter this test data:
 
 ##### Test data
 
@@ -243,3 +243,6 @@ For example:
 Now that you've created and tested your Customer Notification email, select that template in your ParcelCraft settings.
 
 
+## Test your email
+
+To create a test email using your new template, create a shipment, and select "print test label".  When you create a test label, a test email will be sent to the email you set in **your origin address**.
