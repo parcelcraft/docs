@@ -23,7 +23,7 @@ Supported metatdata prior to shipment
 
 |Metadata key|Possible metadata values  |
 |--|--|
-| ship_status |**<span className="code">unshipped</span>** The invoice will appear in your unshipped invoices list <br/>**<span className="code">canceled</span>** The invoice will appear in your canceled invoices list  <br/>**<span className="code">shipped</span>** We assume this was shipped or hand delivered outside of the Parcelcraft app <br/>**<span className="code">back_ordered</span>** The invoice will appear in your backordred invoices list <br/>**<span className="code">(no value)</span>** We assume this is a non-shippable invoice or the status has not been determined <br/>|
+| ship_status |**<span className="code">unshipped</span>** The invoice will appear in your unshipped invoices list <br/>**<span className="code">canceled</span>** The invoice will appear in your canceled invoices list  <br/>**<span className="code">shipped</span>** We assume this was shipped or hand delivered outside of the Parcelcraft app <br/>**<span className="code">back_ordered</span>** The invoice will appear in your backordred invoices list <br/>**<span className="code">unshippable</span>** The item will not appear in your unshipped items list. Used for orders that do not ship.**<span className="code">(no value)</span>** We assume this is a non-shippable invoice or the status has not been determined <br/>|
 |is_return  |<span className="code">**true**</span> (as a string) when a shipment is created, the shipment will be created as a return shipment by default |
 
 
@@ -35,7 +35,7 @@ PaymentIntents and Invoices will mirror each other's metadata values at the time
 |Metadata key| Metadata value example  |
 |--|--|
 | ship_date | **2024-05-24T18:07:34Z** |
-| ship_status | **shipped** (Could be value of unshipped, canceled, back_ordered.  The ship_status metadata will not exist if invoice or payment is considered to be non-shippable) |
+| ship_status | **shipped** (Could be value of unshipped, canceled, back_ordered or unshippable.  If the ship_status metadata does not exist on the invoice or payment we assume it is to be not shippable) |
 | shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
 | tracking_number | **9434600110368044455854** |
 | tracking_URL | **https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854**  |
