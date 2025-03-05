@@ -19,6 +19,11 @@
     "type": "page",
     "href": "https://docs.parcelcraft.com"
   },
+  "My account": {
+    "title": "My account",
+    "type": "page",
+    "href": "https://account.parcelcraft.com"
+  },
   "canny_link": {
     "title": "Request or vote for new features in Parcelcraft",
     "href": "https://parcelcraft.canny.io/feature-requests",
