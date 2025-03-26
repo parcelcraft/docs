@@ -4,6 +4,18 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 
 ---
+# 1.1.4  <span style={{fontSize: "16px"}}>March 26, 2025</span>
+
+- Added:  Added support for packing slips.  Packing slips are only supported when printing a shipment from an invoice.  You can modify packing slip settings (including sending packing slips to another print, or turning them on by default in your Parcelcraft print settings.).  You can add a company logo to your packing slip by visiting account.parcelcraft.com.
+- Added:  Added a message when settings are saved to tell the user to re-open the app if the app is open in another tab to apply settings. This message appears at the top of the settings page.  
+- Fixed:  When viewing an older label, if the image has been deleted from the database, an attempt to display the label would cause the app to crash.  Added a user message if a label image is not available.  We disable printing labels in this case.
+- Fixed:  When selecting custom shipment dimensions, the correct interface to enter custom width, length and height would not appear in some cases.
+- Fixed:  When requesting a quote the select box with prices would sometimes not fill available space.
+- Fixed:  Settings for Printnode would cause an error attempting to enter API key
+- Fixed:  Tab key ids are initialized as strings rather than numbers to accommodate future upgrade to SDK v9.
+- Fixed:  Added more places where older labels will show the full year in the date, if the label is from a previous year.
+
+---
 # 1.0.2  <span style={{fontSize: "16px"}}>March 4, 2025</span>
 
 - Added: Free 90-day, 25-shipment trial in Stripe live mode.  Stripe test mode requires no subscription plan.
