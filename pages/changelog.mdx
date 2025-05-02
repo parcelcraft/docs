@@ -3,6 +3,15 @@
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
 ---
+# 1.1.6  <span style={{fontSize: "16px"}}>May 2, 2025</span>
+
+- Fixed: A shipment history record was not saved to the database when customer notifications were off.
+- Fixed: In some cases, updated shipment settings were not saved between page views.
+- Fixed: The customer's EasyPost balance was not displaying correctly in "Manage wallet".
+- Fixed: Refreshing the unshipped items list did not work  (There is still a 30-second delay before new items can be searched due to a data freshness issue with the Stripe Search API).
+- Added: We now save the customer_id reference when creating a shipment record in our backend in anticipation of future improvements when searching for a customer's shipment history.
+
+---
 # 1.1.6  <span style={{fontSize: "16px"}}>April 10, 2025</span>
 
 - Added: When requesting a quote from all carriers, the correct packaging option was not consistently displayed by default. We now automatically set the package type to a custom width x length x height option in this circumstance since this is the only packaging type that is compatible with all carriers.
