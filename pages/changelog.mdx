@@ -4,6 +4,22 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 
 ---
+# 1.3.0  <span style={{fontSize: "16px"}}>May 29, 2025</span>
+
+
+- Added: We now direct users to an onboarding modal using v9 of the Stripe SDK after initial setup. A link to access the onboarding modal has been added to the settings page.
+- Added: An interface to edit default carrier settings was added to the Stripe dashboard shipping rates section at https://dashboard.stripe.com/shipping-rates. We now link to shipping rate or default carrier settings from the unshipped payments and invoices list.
+- Added: Payments now display an itemized list of products for shipments, with item weight and quantity used to automatically pre-calculate total shipment weight.
+- Added: You can now add custom field data from payment links and checkout sessions to printed shipping labels via the Stripe dashboard payment links section at https://dashboard.stripe.com/payment-links.
+- Added: Users who create shipments from payments can now use 1-click shipment functionality when the payment was created from a payment link or checkout session.
+- Added: We now clearly denote shipments with attached Stripe Shipping rates using a link icon and tooltip. We also indicate when default settings are being used to create shipment data. For example, "Ship 2 kilograms via DHL (default)" will display in the unshipped list with a link to update default settings.
+- Added: We now warn users who have not established default shipment settings and provide a direct method to configure default carrier settings.
+- Fixed: Improved the UX for the page displayed after clicking the "+ Create shipping label" button on the main dashboard view.
+- Fixed: In the main settings under origin address, the default address badge was not displayed when appropriate.
+- Fixed: Attempting to add funds to a wallet produced unhandled errors.
+- Fixed: Attempting to use a digital scale when no scale was properly configured produced no error feedback. We now notify users when a scale connection fails.
+
+---
 # 1.2.0  <span style={{fontSize: "16px"}}>May 12, 2025</span>
 
 - Added: In the shipping history focus view, when resending an email, a loading indicator is now shown.

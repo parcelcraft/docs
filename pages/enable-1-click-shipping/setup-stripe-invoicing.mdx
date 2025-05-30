@@ -1,6 +1,5 @@
 # Setup Stripe Invoicing
 
-Parcelcraft relies on the information from Stripe invoices to determine the order details and the products to ship. Creating an invoice is an optional setting in Stripe, but creating a shipment from an invoice is necessary for Parcelcraft know what is in your order to calculate your package weight, pre-fill international customs forms and generate packing slips. While you can still use Parcelcraft to create shipping labels without invoicing enabled, 1-Click Shipping will not be available.
 
 ## Enabling Invoices for Stripe Payment Links
 
@@ -52,6 +51,6 @@ const session = await stripe.checkout.sessions.create({
 
 For more information on enabling invoices for Checkout Sessions, refer to the [Stripe API documentation](https://docs.stripe.com/api/checkout/sessions/object#checkout_session_object-invoice_creation-enabled).
 
-> **Note:** Enabling invoices for Stripe Payment Links or Checkout Sessions is crucial for Parcelcraft to automate the shipping process and provide 1-Click Shipping functionality.
+
 
 If you have any further questions or need assistance with setting up Stripe invoicing for Parcelcraft, please don't hesitate to reach out to our support team at [support@parcelcraft.com](mailto:support@parcelcraft.com).
