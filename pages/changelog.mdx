@@ -2,6 +2,21 @@
 
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
+
+---
+# 1.3.8 <span style={{fontSize: "16px"}}>August 19, 2025</span>
+- Added: Users can request a driver pickup for a package or multiple packages and carriers after creating a shipment.
+- Added: In the manage shipment view, you can add or manage insurance value and cost, and you can also request a pickup from this screen.
+- Added: Users can now add insurance after creating a label in the Print label view.  If your carrier has not yet collected a parcel, you can also add insurance to a shipment in the shipment history / manage shipment view. 
+- Added: We now ask users to set their default shipping options in the onboarding view (new section).
+- Fixed: The API key and address settings are not updated in the underlying Settings view when users prematurely exit the quick start guide. We now use the new useStorage hook to manage state between these simultaneously displayed views.
+- Fixed: Scan forms have been relabeled as "End of day" to encourage their use
+
+
+---
+# 1.3.8 <span style={{fontSize: "16px"}}>June 24, 2025</span>
+- Fixed: In email settings, validation errors are now displayed to the user when entering incorrect values as a reply-to address or BCC email address
+
 ---
 # 1.3.7 <span style={{fontSize: "16px"}}>June 18, 2025</span>
 - Fixed: When purchasing a shipping label, we disable the "Buy label" button until the label is successfully purchased to prevent multiple purchases of the same label.
