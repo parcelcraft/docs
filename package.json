@@ -1,6 +1,6 @@
 {
   "name": "parcelcraft-docs",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "description": "Parcelcraft documentation using Nextra docs template",
   "scripts": {
     "dev": "next dev",
