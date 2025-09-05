@@ -4,8 +4,7 @@
   "description": "Parcelcraft documentation using Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "preinstall": "rimraf ./out && rimraf ./.next",
-    "build": "rimraf ./out && rimraf ./.next && next build",
+    "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start"
   },
