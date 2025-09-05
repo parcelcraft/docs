@@ -8,6 +8,9 @@
     "postbuild": "next-sitemap",
     "start": "next start"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
