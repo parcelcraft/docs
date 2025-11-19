@@ -8,7 +8,6 @@
   "troubleshooting": "",
   "faq": "FAQ",
   "api-guide": "",
- 
   "Home": {
     "title": "Home",
     "type": "page",
@@ -23,11 +22,5 @@
     "title": "My account",
     "type": "page",
     "href": "https://account.parcelcraft.com"
-  },
-  "canny_link": {
-    "title": "Request or vote for new features in Parcelcraft",
-    "href": "https://parcelcraft.canny.io/feature-requests",
-    "newWindow": true
   }
-  
 }
