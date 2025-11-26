@@ -4,6 +4,19 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 
 ---
+# 1.5.4 <span style={{fontSize: "16px"}}>November 26, 2025</span>
+- Fixed: A wildcard in our content security policy gave rare users an error: "We had a problem loading your settings."  We now explicitly set the subdomain to api.parcelcraft.com and account.parcelcraft.com. Users will were sent an email to accept this permission change.
+- Fixed: Successful payments were shown as unpaid
+- Fixed: The layout for an unshippable product was improved
+- Fixed: Users now have a clear error message when EasyPost api keys are inactive and cannot be accessed
+- Fixed: The data in the Shipment History list is now automatically re-fetched every 10 minutes for data freshness.
+- Fixed: We now use the Stripe account ID in urls for link in the Stripe dashboard
+- Fixed: Users with small screens or long product names could not set their product defaults
+- Fixed: International shipment would have an auto-generated customs explanation based on the array of products in the shipment, which would sometimes exceed the 255 character limit.  The customs explanation is not truncated to 255 characters by default. We now show the customs explanation by default.
+- Fixed: When onboarding a new origin address, we now fix the address to pass validation (since a name is required, if a user doesn't enter a name, but provides a company name, we use the company name for the name field and remove the company field before saving to the server)
+
+
+---
 # 1.4.3 <span style={{fontSize: "16px"}}>October 10, 2025</span>
 - Fixed: Users were unable to open the quickstart guide from the Parcelcraft settings view if they have completed all steps in the quickstart guide due to a change in the Stripe SDK v9.
 - Added: Users are now able to use USA Export as a carrier when creating shipments.  See https://www.easypost.com/carriers/usa-export-powered-by-asendia/.
