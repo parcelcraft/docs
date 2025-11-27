@@ -12,7 +12,7 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 - Fixed: The data in the Shipment History list is now automatically re-fetched every 10 minutes for data freshness.
 - Fixed: We now use the Stripe account ID in urls for link in the Stripe dashboard
 - Fixed: Users with small screens or long product names could not set their product defaults
-- Fixed: International shipment would have an auto-generated customs explanation based on the array of products in the shipment, which would sometimes exceed the 255 character limit.  The customs explanation is not truncated to 255 characters by default. We now show the customs explanation by default.
+- Fixed: International shipment would have an auto-generated customs explanation based on the array of products in the shipment, which would sometimes exceed the 255 character limit.  The customs explanation is now truncated to 255 characters by default. We now show the customs explanation by default.
 - Fixed: When onboarding a new origin address, we now fix the address to pass validation (since a name is required, if a user doesn't enter a name, but provides a company name, we use the company name for the name field and remove the company field before saving to the server)
 
 
