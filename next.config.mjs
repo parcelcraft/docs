@@ -13,4 +13,7 @@ export default withNextra({
   reactStrictMode: true,
   output: 'export',
   distDir: '.next',
+  images: {
+    unoptimized: true,
+  }
 })
