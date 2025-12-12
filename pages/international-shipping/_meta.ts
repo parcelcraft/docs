@@ -1,0 +1,5 @@
+export default {
+    'international-settings': 'Setting International Shipping Defaults',
+    'international-test-label': 'Print International Test Label',
+    'additional-resources': 'Additional Resources'
+}

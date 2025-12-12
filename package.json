@@ -26,16 +26,17 @@
     "next": "^14.2.6",
     "next-sitemap": "^4.2.3",
     "nextjs-google-analytics": "^2.3.7",
-    "nextra": "2.13.4",
-    "nextra-theme-docs": "2.13.4",
+    "nextra": "^3.2.0",
+    "nextra-theme-docs": "^3.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^5.0.10",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@types/node": "18.11.10",
-    "typescript": "^4.9.3"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.5.0"
   },
   "optionalDependencies": {
     "@napi-rs/simple-git-linux-x64-gnu": "^0.1.9",
