@@ -4,6 +4,17 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 
 ---
+# 1.7.0 <span style={{fontSize: "16px"}}>April 14, 2026</span>
+- Added: When creating a shipment, under shipment options, users can now specify a preference to always ship return shipments by default.
+- Added: New data is saved to our database when a user changes the ship_status metadata of an invoice or payment in anticipation for a full page version of Parcelcraft in Stripe Apps.  This also populates data that is being collected for a new "unified orders" list for shipments from Stripe Webhook data.
+- Fixed: Shipments between some European nations were not marked as international. Additional customs requirements were added between these countries to meet specific carrier requirements.
+- Fixed: Formatting for unshippable items in an invoice item list had bad formatting
+- Fixed: In the Settings View, users were incorrectly told there was an error saving settings.
+- Fixed: When entering a new reply-to address in the notifications tab in settings, the last character of the input would be over eagerly clipped due to a debouncing function.  This could be a related to a resolved bug where a text field would loose focus on the Stripe Apps platform.
+
+
+
+---
 # 1.6.0 <span style={{fontSize: "16px"}}>March 3, 2026</span>
 - Fixed: Paid payments were sometimes labeled as unpaid in the Unshipped payments list
 - Fixed: Users who use centimeters as a default measurement unit were presented package measurements in inches (In the background EasyPost only accepts package measurement units in inches, and the app failed to correct the user dimension unit preference when displayed)
