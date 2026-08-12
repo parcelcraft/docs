@@ -4,6 +4,24 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 
 ---
+# 2.0.1 <span style={{fontSize: "16px"}}>August 12, 2026</span>
+
+Our largest update yet: this release introduces the new full-page Parcelcraft experience in the Stripe dashboard, with a unified orders list, bulk shipping, and carrier-aware shipment options.
+
+- Added: A full-page version of Parcelcraft in the Stripe dashboard. The full-page app presents a unified Orders list built from your payments and invoices, with tabs to create shipments and browse your shipment history — no more working only from a side drawer.
+- Added: Bulk shipping. Select multiple orders in the full-page Orders list to quote, buy, and print many shipping labels in one flow. A summary footer guides each step: get quotes, select rates, review customs where required, buy labels, then print every label at once.
+- Added: A new shipment focus view for preparing one or many shipments, with an editable package section, customs panel, shipment options, rate selection, and contextual actions that follow the state of each shipment.
+- Added: Orders can be filtered by shipping status, date range, and product, with live status counts (for example Unshipped and Shipped) sourced from our orders backend.
+- Added: Carrier-aware shipment options. Options are now filtered to the selected carrier — for example, Saturday delivery only appears for UPS and FedEx, and USPS-only options such as certified or registered mail appear only for USPS. Frequently used options stay inline, while the full set of carrier options lives behind a "Show more options" expander, grouped by category.
+- Added: Third-party billing. When shipping with UPS, FedEx, or DHL Express, you can bill the shipment to another party's carrier account (account number, postal code, and country). This is unavailable for USPS and UPS-DAP accounts, which do not support it.
+- Added: Tax identifiers on shipments. Sender tax IDs (IOSS, EORI, GST, VAT, EIN, and more) prefill from your Parcelcraft tax settings, and receiver tax IDs prefill from the customer's Stripe tax IDs. You can review, edit, add, and remove them per shipment, with the identifier types limited to those supported by the selected carrier.
+- Added: Package size and weight validation. The package editor now flags packages that exceed the selected service or predefined package limits as errors, and warns when a package exceeds published carrier guidelines.
+- Added: The print label view now shows a packing list (quantity and product per order), the recipient for each label, and a badge indicating whether the tracking email was sent for each shipment.
+- Added: The drawer's unshipped list is now powered by the same unified orders backend as the full-page app, so both views always agree.
+- Fixed: The Buy label and Test label buttons are now disabled until the shipment is actually purchasable (a rate has been selected), instead of silently doing nothing.
+
+
+---
 # 1.7.0 <span style={{fontSize: "16px"}}>April 14, 2026</span>
 - Added: When creating a shipment, under shipment options, users can now specify a preference to always ship return shipments by default.
 - Added: New data is saved to our database when a user changes the ship_status metadata of an invoice or payment in anticipation for a full page version of Parcelcraft in Stripe Apps.  This also populates data that is being collected for a new "unified orders" list for shipments from Stripe Webhook data.

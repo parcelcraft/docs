@@ -1,13 +1,14 @@
 export default {
     index: 'Support',
-    'getting-started': 'Getting Started',
-    'enable-1-click-shipping': '1-Click Shipping',
-    'international-shipping': 'International Shipping',
-    'additional-automation': 'Additional Automation',
+    'getting-started': 'Getting started',
+    'full-page-app': 'The full-page app',
+    'enable-1-click-shipping': '1-click shipping',
+    'international-shipping': 'International shipping',
+    'additional-automation': 'Additional automation',
     'get-the-best-shipping-rates': 'How to get the best shipping rates',
     troubleshooting: 'Troubleshooting',
     faq: 'FAQ',
-    'api-guide': 'API Guide',
+    'api-guide': 'API guide',
     '---': {
         type: 'separator'
     },

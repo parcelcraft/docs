@@ -1,6 +1,6 @@
 export default {
-    'setup-stripe-invoicing': 'Setup Stripe Invoicing',
-    'setup-printnode-account': 'PrintNode Account Setup',
-    'set-product-defaults': 'Define Shippable Products',
-    'set-carrier-defaults': 'Set Carrier Defaults'
+    'setup-stripe-invoicing': 'Set up Stripe invoicing',
+    'setup-printnode-account': 'Set up a PrintNode account',
+    'set-product-defaults': 'Define shippable products',
+    'set-carrier-defaults': 'Set carrier defaults'
 }

@@ -1,5 +1,5 @@
 export default {
-    'setup-a-digital-scale': 'Setup a Digital Scale',
-    'custom-email-notifications': 'Custom Email Notifications',
-    'setup-print-to-email': 'Setup Print to Email'
+    'setup-a-digital-scale': 'Set up a digital scale',
+    'custom-email-notifications': 'Custom email notifications',
+    'setup-print-to-email': 'Set up print to email'
 }

@@ -1,5 +1,6 @@
 export default {
-    'international-settings': 'Setting International Shipping Defaults',
-    'international-test-label': 'Print International Test Label',
-    'additional-resources': 'Additional Resources'
+    'international-settings': 'Setting international shipping defaults',
+    'tax-identifiers': 'Tax identifiers',
+    'international-test-label': 'Print an international test label',
+    'additional-resources': 'Additional resources'
 }

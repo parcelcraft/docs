@@ -1,54 +1,82 @@
-# Print International Test Label
+# Print an international test label
 
-In this tutorial, we will guide you through the process of manually creating an international shipping label using Parcelcraft. Typically, most of the information entered during this tutorial would be automatically populated from the invoice and defaults set up in the [Enable 1-Click Shipping](/enable-1-click-shipping) and [International Defaults](/international-shipping/international-settings) sections.
+In this tutorial, we will guide you through manually creating an
+international shipping label using Parcelcraft. Typically, most of the
+information entered during this tutorial would be automatically populated
+from the invoice and the defaults set up in the
+[Enable 1-Click Shipping](/enable-1-click-shipping) and
+[International Defaults](/international-shipping/international-settings)
+sections.
 
-## Step 1: Access the Parcelcraft Dashboard
+## Step 1: Start a blank shipment
 
-1. Log in to your Stripe account and navigate to the Home page.
-2. Locate the Parcelcraft icon on the dashboard and click on it to open the Parcelcraft dashboard.
+1. Open the [full-page app](/full-page-app) — in the Stripe dashboard's left
+   sidebar, click **Apps**, then **Parcelcraft Shipping** — or open the
+   Parcelcraft drawer from the app tray at the top right.
+2. Click the **+ Create shipment** button. This opens the
+   [Create shipment view](/full-page-app/create-shipment) with a blank
+   shipment prefilled from your defaults.
 
-![Parcelcraft Dashboard](./../../public/images/parcelcraft-dashboard.png)
+## Step 2: Enter the shipment information
 
-## Step 2: Start a New Shipping Label
+1. In the **Ship to** fields, enter an international address — any address
+   outside your origin country.
+2. Fill in the weight, dimensions, and carrier information for your
+   shipment. The service dropdown automatically filters to services that
+   support international delivery for the selected carrier.
 
-1. In the Parcelcraft dashboard, click on the **+ Create shipping label** button to start the label creation process.
+## Step 3: Fill out the customs declaration
 
-![Create Shipment](./../../public/images/create-shipment.png)
+As soon as the destination country differs from your origin country, the
+customs declaration appears automatically — there is no separate dialog to
+open, and your entries are saved as you type. (In the shipment view it
+appears inline below the shipment options; when shipping in bulk it gets its
+own **Review customs** tab.)
 
-2. Click on the **or start a blank label** link to manually enter the shipping details.
-3. In the address fields, enter an international address and click on the **Use address** button to proceed.
+![The customs declaration](./../../public/images/v2/create-shipment-customs-tab.png)
 
-## Step 3: Enter Shipment Information
+Complete the declaration:
 
-Fill in the weight, dimensions, and carrier information for your shipment. Make sure to select a carrier and service that supports international shipping.
+1. **Declare your items** — one entry per product in the package, prefilled
+   from your international defaults and the order's packing list:
+   - Item description for customs
+   - Tariff code (HS code)
+   - Origin country
+   - Quantity, value, and currency (per item or total)
+   - Weight (per item or total)
+2. **Declare your shipment type** — the contents type (merchandise,
+   documents, gift, and so on), what the carrier should do if delivery
+   fails (return or abandon), and an EEL PFC, ITN, or AES code where
+   required.
+3. **Certify** — check the box confirming the declaration is accurate and
+   sign your name. Your signature is remembered for future shipments.
 
-![Create International Shipment](./../../public/images/create-international-shipment.png)
+> **Tip:** Please see the [Additional Resources](additional-resources.mdx)
+> for links to official customs information.
 
-## Step 4: Edit Customs Information
+You can't buy a label while the customs declaration is incomplete — the
+button at the bottom of the view reads **Review customs** until every
+required field is filled in.
 
-1. Click on the **Edit customs info** button to open the customs information dialog.
-2. Fill out the required customs details, including:
-   - Product descriptions
-   - Tariff codes
-   - Quantities
-   - Values
+## Step 4: Print the test label
 
-> **Tip:** Please see the [Additional Resources](additional-resources.mdx) for links to official customs information.
+1. Click **Print test** to generate a test shipping label and customs sheet.
+2. The **Print label** tab opens; click **Print Label** to open them in a
+   new browser tab.
+3. Review the label and customs sheet for accuracy, then print them or save
+   them for your records.
 
-![Add Customs Info](./../../public/images/add-customs-info.png)
+> **Tip:** If the test label doesn't open or print as expected, double-check
+> your printer settings and ensure that your printer is connected and
+> functioning properly. You can also review the settings on the **Printers &
+> digital scale** tab to make sure they are configured correctly for your
+> setup.
 
-3. Once you have completed filling out the customs information, click on the **Save** button to return to the **Create shipment** dialog.
+When shipping for real, attach the printed customs sheet to your shipment,
+typically in a clear plastic pouch or envelope, as required by your shipping
+carrier.
 
-
-## Step 5: Print the Test Label
-
-1. Click on the **Print test label** button to generate a test shipping label and customs sheet.
-2. By default, the test label will open in a new browser window or tab.
-3. Review the label and customs sheet for accuracy.
-4. Print the label and customs sheet or save them for your records.
-
-> **Tip:** If the test label doesn't open or print as expected, double-check your printer settings and ensure that your printer is connected and functioning properly. You can also review the settings on the **Printers & digital scale** tab to make sure they are configured correctly for your setup.
-
-5. Attach the printed customs sheet to your shipment, typically in a clear plastic pouch or envelope, as required by your shipping carrier.
-
-If you encounter any issues or have questions during this process, don't hesitate to reach out to [support@parcelcraft.com](mailto:support@parcelcraft.com) for assistance. Our support team is available to help you troubleshoot any problems and ensure a smooth experience with the Parcelcraft platform.
+If you encounter any issues or have questions during this process, don't
+hesitate to reach out to [support@parcelcraft.com](mailto:support@parcelcraft.com)
+for assistance. Our support team is available to help you troubleshoot any
+problems and ensure a smooth experience with the Parcelcraft platform.

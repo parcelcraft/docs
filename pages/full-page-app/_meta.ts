@@ -1,0 +1,10 @@
+export default {
+    'orders-list': 'Orders list',
+    'create-shipment': 'Creating a shipment',
+    'bulk-shipping': 'Bulk shipping',
+    'shipment-options': 'Shipment options',
+    insurance: 'Insurance',
+    pickups: 'Pickups',
+    'end-of-day': 'End-of-day scan forms',
+    wallet: 'Wallet'
+}

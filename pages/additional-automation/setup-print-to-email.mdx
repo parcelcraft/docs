@@ -1,12 +1,30 @@
-# Automatically Print Label Attachments Sent to Your Email Address
+# Automatically print labels sent to your email
 
-Parcelcraft can send label and form files to an email address. With proper setup, you shouldn't need to select your print options every time you ship: your printer will automatically start printing after you click **1-click ship**.
+Parcelcraft can email every label and form file to an address of your
+choosing as an attachment. Pair that with a printer or tool that
+automatically prints incoming attachments, and your labels print themselves
+without a print dialog.
 
-> Note: Printing to email is not our recommendation. Instead, use the [PrintNode](enable-1-click-shipping/setup-printnode-account) option for easier setup. PrintNode allows up to 50 free prints per month and offers reasonable prices for additional quantities. 
+> Note: Printing to email is not our recommendation. Instead, use the
+> [PrintNode](/enable-1-click-shipping/setup-printnode-account) option for
+> easier setup. PrintNode allows up to 50 free prints per month and offers
+> reasonable prices for additional quantities.
 
-## Tools to Automatically Print Email Attachments
+## Turn on print to email
 
-There are several tools that can help you automatically print attachments arriving at your email address:
+1. Go to the [Parcelcraft settings page](https://dashboard.stripe.com/settings/apps/com.productivity.parcelcraft)
+   and click the **Printers & digital scale** tab.
+2. Toggle on **Send as attachment in email**.
+3. Enter the address in the **Email labels to:** field — it's prefilled
+   with your Stripe dashboard email address.
+
+If packing slips are enabled in your print settings, they're attached too
+(packing slips are only supported for labels created from an invoice).
+
+## Tools to automatically print email attachments
+
+There are several tools that can help you automatically print attachments
+arriving at your email address:
 
 - If you use Outlook, refer to [How to Print Incoming Mail Automatically in Outlook](https://www.lifewire.com/automatically-print-incoming-mail-outlook-1173140).
 
@@ -14,10 +32,16 @@ There are several tools that can help you automatically print attachments arrivi
 
 - Use Automatic Email Manager 6. See [Automatically Print Your Emails with Attachments](https://www.automatic-email-manager.com/feature-print-email-body-and-attachments).
 
-Both labels and forms are sent to the same email address. If you use one printer for labels and another for customs forms, you can create rules in your email client to forward emails to the correct address based on the subject line of the email you receive from Parcelcraft.
+Both labels and forms are sent to the same email address, and the emails
+come from **@parcelcraft.com** addresses. If you use one printer for labels
+and another for customs forms, create rules in your email client that
+forward each email to the correct printer's address based on the subject
+line of the email you receive from Parcelcraft.
 
-After setting up your printer to receive email attachments, test printing both a label and a form from the Parcelcraft printer settings page.
+After setting up your printer to receive email attachments, print a
+[test label](/getting-started/print-test-label) to confirm the email
+arrives and your printer picks it up.
 
-> Note: When you create return labels, you'll have the option to email labels directly to your customers. The settings here do not apply to customer return label emails.
-
-
+> Note: When you create return labels, you'll have the option to email
+> labels directly to your customers. The settings here do not apply to
+> customer return label emails.
