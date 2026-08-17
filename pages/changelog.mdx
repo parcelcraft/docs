@@ -2,8 +2,37 @@
 
 We regularly make updates to Parcelcraft shipping. This page logs the evolution of the Parcelcraft Shipping app.
 
+
 ---
-# 2.0.5 <span style={{fontSize: "16px"}}>August 13, 2026</span>
+## 2.1.0 <span style={{fontSize: "16px"}}>August 17, 2026</span>
+
+### Breaking change
+
+- Documentation, label printing, and account links are now served from www.parcelcraft.com on our new website. account.parcelcraft.com and docs.parcelcraft.com are no longer used — sign-in, session, dashboard, docs, and label URLs all point at the new domain, and the app's connect/image permissions were updated to match.
+
+### Fixed
+
+- Label images failed to load on the print page because the label URL was built from the old dashboard host.
+- Payment status badges were the wrong color everywhere in the compact order view — every badge rendered gray, including Unpaid. Unpaid is now red, and refunded/partially refunded are amber.
+- In the orders table, Refunded showed as a neutral badge and Partially refunded never matched at all.
+- Bulk shipments to countries that don't use states/provinces or postal codes were blocked by "State required" / "ZIP code required" errors, even though the address form correctly hides those fields.
+- FedEx's custom label text fields (Print custom 1 and 2) and the Alcohol option were hidden even on carriers that support them.
+- Product and shipping rate names in Settings opened a broken link; they now open the item in your Stripe dashboard.
+- Order and shipment lists could error out instead of rendering when currency or date information was unavailable.
+
+### Improved
+
+- Column choices for the Orders and Shipment history tables now save to your Parcelcraft account instead of only the browser, so your layout follows you between browsers and survives a reload. Changes save as you make them rather than only when you leave the page, and the table no longer flashes a loading spinner while settings load.
+- Orders table defaults reordered (currency and description promoted), and redundant column headers hidden.
+- Toolbar on the Orders page restyled — Create shipment is now the primary action.
+- Label buttons use sentence case: "Buy 3 labels", "Print 2 test labels".
+
+
+
+
+
+---
+## 2.0.5 <span style={{fontSize: "16px"}}>August 13, 2026</span>
 
 - Fixed: Links from FullPage app to dashboard were not opening the app drawer
 - Fixed: Estimated weight was not calculated properly based on the fallback weight defaults products and shipping rates.
@@ -12,7 +41,7 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 - Added: Error warning when attempting to edit a checkout-session generated Shipping Rate -- these rates can not be edited.
 
 ---
-# 2.0.1 <span style={{fontSize: "16px"}}>August 12, 2026</span>
+## 2.0.1 <span style={{fontSize: "16px"}}>August 12, 2026</span>
 
 Our largest update yet: this release introduces the new full-page Parcelcraft experience in the Stripe dashboard, with a unified orders list, bulk shipping, and carrier-aware shipment options.
 
@@ -30,7 +59,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.7.0 <span style={{fontSize: "16px"}}>April 14, 2026</span>
+## 1.7.0 <span style={{fontSize: "16px"}}>April 14, 2026</span>
 - Added: When creating a shipment, under shipment options, users can now specify a preference to always ship return shipments by default.
 - Added: New data is saved to our database when a user changes the ship_status metadata of an invoice or payment in anticipation for a full page version of Parcelcraft in Stripe Apps.  This also populates data that is being collected for a new "unified orders" list for shipments from Stripe Webhook data.
 - Fixed: Shipments between some European nations were not marked as international. Additional customs requirements were added between these countries to meet specific carrier requirements.
@@ -41,7 +70,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.6.0 <span style={{fontSize: "16px"}}>March 3, 2026</span>
+## 1.6.0 <span style={{fontSize: "16px"}}>March 3, 2026</span>
 - Fixed: Paid payments were sometimes labeled as unpaid in the Unshipped payments list
 - Fixed: Users who use centimeters as a default measurement unit were presented package measurements in inches (In the background EasyPost only accepts package measurement units in inches, and the app failed to correct the user dimension unit preference when displayed)
 - Fixed: Shipping between countries that did not require customs forms were presented with Customs Forms to fill out (For example, shipping between some European Union Countries, or shipping between French colonies or shipping between certain U.S. territories- and many other use cases)
@@ -50,7 +79,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.5.4 <span style={{fontSize: "16px"}}>November 26, 2025</span>
+## 1.5.4 <span style={{fontSize: "16px"}}>November 26, 2025</span>
 - Fixed: A wildcard in our content security policy gave rare users an error: "We had a problem loading your settings."  We now explicitly set the subdomain to api.parcelcraft.com and account.parcelcraft.com. Users will were sent an email to accept this permission change.
 - Fixed: Successful payments were shown as unpaid
 - Fixed: The layout for an unshippable product was improved
@@ -63,13 +92,13 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.4.3 <span style={{fontSize: "16px"}}>October 10, 2025</span>
+## 1.4.3 <span style={{fontSize: "16px"}}>October 10, 2025</span>
 - Fixed: Users were unable to open the quickstart guide from the Parcelcraft settings view if they have completed all steps in the quickstart guide due to a change in the Stripe SDK v9.
 - Added: Users are now able to use USA Export as a carrier when creating shipments.  See https://www.easypost.com/carriers/usa-export-powered-by-asendia/.
 - Removed: In the quickstart guide, we'e removed the account checkup step and moved it to our main settings view.
 
 ---
-# 1.4.1 <span style={{fontSize: "16px"}}>August 19, 2025</span>
+## 1.4.1 <span style={{fontSize: "16px"}}>August 19, 2025</span>
 - Added: Users can request a driver pickup for a package or multiple packages and carriers after creating a shipment.
 - Added: In the manage shipment view, you can add or manage insurance value and cost, and you can also request a pickup from this screen.
 - Added: Users can now add insurance after creating a label in the Print label view.  If your carrier has not yet collected a parcel, you can also add insurance to a shipment in the shipment history / manage shipment view. 
@@ -79,17 +108,17 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.3.8 <span style={{fontSize: "16px"}}>June 24, 2025</span>
+## 1.3.8 <span style={{fontSize: "16px"}}>June 24, 2025</span>
 - Fixed: In email settings, validation errors are now displayed to the user when entering incorrect values as a reply-to address or BCC email address
 
 ---
-# 1.3.7 <span style={{fontSize: "16px"}}>June 18, 2025</span>
+## 1.3.7 <span style={{fontSize: "16px"}}>June 18, 2025</span>
 - Fixed: When purchasing a shipping label, we disable the "Buy label" button until the label is successfully purchased to prevent multiple purchases of the same label.
 - Fixed: Voided shipments could not be viewed in the shipment history focus view. We now display voided shipment details in the shipment history focus view when appropriate.
 - Fixed: Removed 3rd column in onboarding modal to conform to Stripe's onboarding design standards
 
 ---
-# 1.3.6  <span style={{fontSize: "16px"}}>June 2, 2025</span>
+## 1.3.6  <span style={{fontSize: "16px"}}>June 2, 2025</span>
 
 - Fixed: Users no longer need to reload their app after changing any kind of user settings (thanks to Tarpan for calling attention to this issue)
 - Fixed: We have removed user instructions to reload the app when settings are saved in the settings view
@@ -101,7 +130,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.3.1  <span style={{fontSize: "16px"}}>May 30, 2025</span>
+## 1.3.1  <span style={{fontSize: "16px"}}>May 30, 2025</span>
 
 
 - Added: We now direct users to an onboarding modal using v9 of the Stripe SDK after initial setup. A link to access the onboarding modal has been added to the settings page.
@@ -117,7 +146,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Fixed: Attempting to use a digital scale when no scale was properly configured produced no error feedback. We now notify users when a scale connection fails.
 
 ---
-# 1.2.0  <span style={{fontSize: "16px"}}>May 12, 2025</span>
+## 1.2.0  <span style={{fontSize: "16px"}}>May 12, 2025</span>
 
 - Added: In the shipping history focus view, when resending an email, a loading indicator is now shown.
 - Added: A link to refresh the shipment history list is now added to the bottom of the shipment history tab
@@ -128,13 +157,13 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 1.1.7  <span style={{fontSize: "16px"}}>May 8, 2025</span>
+## 1.1.7  <span style={{fontSize: "16px"}}>May 8, 2025</span>
 
 - Added: Print to email now includes packing slips when selected in the Parcelcraft settings.  Packing slips are only supported you create a label from an invoice.
 
 
 ---
-# 1.1.6  <span style={{fontSize: "16px"}}>May 2, 2025</span>
+## 1.1.6  <span style={{fontSize: "16px"}}>May 2, 2025</span>
 
 - Fixed: A shipment history record was not saved to the database when customer notifications were off.
 - Fixed: In some cases, updated shipment settings were not saved between page views.
@@ -143,14 +172,14 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Added: We now save the customer_id reference when creating a shipment record in our backend in anticipation of future improvements when searching for a customer's shipment history.
 
 ---
-# 1.1.6  <span style={{fontSize: "16px"}}>April 10, 2025</span>
+## 1.1.6  <span style={{fontSize: "16px"}}>April 10, 2025</span>
 
 - Added: When requesting a quote from all carriers, the correct packaging option was not consistently displayed by default. We now automatically set the package type to a custom width x length x height option in this circumstance since this is the only packaging type that is compatible with all carriers.
 - Fixed: The code now properly remembers packaging selections per carrier, and if a custom size is requested, we preserve those dimensions between carrier selections. This maintains a consistent user experience when switching between carriers.
 
 
 ---
-# 1.1.4  <span style={{fontSize: "16px"}}>March 26, 2025</span>
+## 1.1.4  <span style={{fontSize: "16px"}}>March 26, 2025</span>
 
 - Added:  Added support for packing slips.  Packing slips are only supported when printing a shipment from an invoice.  You can modify packing slip settings (including sending packing slips to another print, or turning them on by default in your Parcelcraft print settings.).  You can add a company logo to your packing slip by visiting account.parcelcraft.com.
 - Added:  Added a message when settings are saved to tell the user to re-open the app if the app is open in another tab to apply settings. This message appears at the top of the settings page.  
@@ -162,7 +191,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Fixed:  Added more places where older labels will show the full year in the date, if the label is from a previous year.
 
 ---
-# 1.0.2  <span style={{fontSize: "16px"}}>March 4, 2025</span>
+## 1.0.2  <span style={{fontSize: "16px"}}>March 4, 2025</span>
 
 - Added: Free 90-day, 25-shipment trial in Stripe live mode.  Stripe test mode requires no subscription plan.
 - Added: Parcelcraft Account section to settings.  Users can create or login (through the app) to their account at https://account.parcelcraft.com and select a plan for a Parcelcraft shipping subscription
@@ -171,42 +200,42 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Fixed: Searching for shipments with spaces would return no results
 
 ---
-# 0.11.8  <span style={{fontSize: "16px"}}>Jan 28, 2025</span>
+## 0.11.8  <span style={{fontSize: "16px"}}>Jan 28, 2025</span>
 
 - Fixed: Saving customs description for products did not work.
 - Feature: Added tips to the Settings view for the "Shippable product" and "Default carrier" settings tabs.
 
 ---
-# 0.11.7  <span style={{fontSize: "16px"}}>Jan 28, 2025</span>
+## 0.11.7  <span style={{fontSize: "16px"}}>Jan 28, 2025</span>
 
 - Fixed: When switching between tabs in the settings view, previously saved settings were not displayed.
 - Fixed: In the unshipped invoices view, older invoices than those specified by the view filter were being shown.
 
 
 ---
-# 0.11.1  <span style={{fontSize: "16px"}}>Jan 16, 2025</span>
+## 0.11.1  <span style={{fontSize: "16px"}}>Jan 16, 2025</span>
 
 - Feature: Added search bar below the "Create new shipment" button in the main view to quickly create a shipment based on a customer.
 - Feature: Added the ability to change shipment status in list view before creating a shipment
 - Fixed: Unshipped Invoice list view did not work in the last update.
 
 ---
-# 0.10.7  <span style={{fontSize: "16px"}}>Jan 16, 2025</span>
+## 0.10.7  <span style={{fontSize: "16px"}}>Jan 16, 2025</span>
 - Fixed: Entering an email address on the settings page for the "Print to email"" email field was difficult due to incorrect rerendering.
 - Feature: In view settings for Unshipped Invoices or Unshipped Payments only you can now choose to only show successfull payments or paid invoices (defaults to filter shipments).
 - Feature: Added a new welcome message for new users in the settings view.
 
 ---
-# 0.10.6  <span style={{fontSize: "16px"}}>Dec 20, 2024</span>
+## 0.10.6  <span style={{fontSize: "16px"}}>Dec 20, 2024</span>
 - Fixed: Users who enabled DHL eCommerce as a carrier in EasyPost were unable to create shipments.
 
 ---
-# 0.10.2  <span style={{fontSize: "16px"}}>Nov 20, 2024</span>
+## 0.10.2  <span style={{fontSize: "16px"}}>Nov 20, 2024</span>
 - Feature: Weight conversions are now more flexible with user-inputted metadata for the value of weight_unit. Previously, only an ounce, pound, kilogram, or gram was acceptable for a weight unit. Now, values such as lbs, lb, lb., lbs., pounds, and pound are acceptable.
 - Fixed: To accommodate real-world testing, the timeout for detecting an error in loading EasyPost carrier metadata was increased from 6 seconds to 10 seconds. Users should see fewer errors when operating during an EasyPost API stress test (for example, on weekends).
 
 ---
-# 0.10.0  <span style={{fontSize: "16px"}}>Nov 13, 2024</span>
+## 0.10.0  <span style={{fontSize: "16px"}}>Nov 13, 2024</span>
 - Fixed: No more 422 Unproccessible content errors and improved error handling
 - Fixed: Reduced the amount of retries when an error is encountered in shipping to quickly display error message
 - Fixed: Address suggestions have improved to the new Google Places API v2
@@ -227,13 +256,13 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Feature: Remember setting for address suggestions
 
 ---
-# 0.9.0  <span style={{fontSize: "16px"}}>Oct 3, 2024</span>
+## 0.9.0  <span style={{fontSize: "16px"}}>Oct 3, 2024</span>
 - Feature: Added the ability to create and quote shipments for USPS Library Mail or USPS Media Mail rates.  Users must select Library Mail or Media Mail to get quotes for these types of USPS shipments
 - Fixed: The bulk printing option had a bug where the button was active before the URL was generated correctly, creating incorrect queries if the button was pressed too soon.  It's now disabled while the request URL is being processed
 
 
 ---
-# 0.8.2  <span style={{fontSize: "16px"}}>Aug 19, 2024</span>
+## 0.8.2  <span style={{fontSize: "16px"}}>Aug 19, 2024</span>
 - Feature: A new printer icon has been added to the shipment history tab.  Click on the button to print multiple shipments at once.
 - Fixed:  When updating an address, sometimes changes would not be applied in cases where a company value was deleted
 - Fixed: When verifying an address in some rare cases the correct address would not be used
@@ -241,7 +270,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 0.7.1  <span style={{fontSize: "16px"}}>July 10, 2024</span>
+## 0.7.1  <span style={{fontSize: "16px"}}>July 10, 2024</span>
 - Breaking Change:  Ship status metadata for canceled shipments was changed from cancelled to canceled to be consistent with Stripe API spelling
 - Feature: Users can now see an unshipped payments list rather than only an unshipped invoices list in default view settings
 - Feature: Improved manage shipment and "reship" button when in Payment or Invoice view
@@ -254,12 +283,12 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 0.6.2  <span style={{fontSize: "16px"}}>June 17, 2024</span>
+## 0.6.2  <span style={{fontSize: "16px"}}>June 17, 2024</span>
 - Fixed: Previously saved carrier and shipping rate settings were not being diplayed properly in Carrier Defaults tab in Parcelcraft settings
 
 
 ---
-# 0.6.1  <span style={{fontSize: "16px"}}>June 17, 2024</span>
+## 0.6.1  <span style={{fontSize: "16px"}}>June 17, 2024</span>
 
 - Feature: Add shipment_id metadata to invoices and payments when a shipment is created
 - Feature: Improved payment detail view with ship status control, and payment description. Added a ship status and "manage shipment button" in the payment detail view
@@ -278,7 +307,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Fixed: Incorrect options and notifications were shown if PrintNode was selected as a printer and no PrintNode API key was provided
 
 ---
-# 0.5.0  <span style={{fontSize: "16px"}}>June 14, 2024</span>
+## 0.5.0  <span style={{fontSize: "16px"}}>June 14, 2024</span>
 
 - Feature:  Add the ability to add a product or invoice with a metadata key of "is_return" and a value of "true" to default to create a return shipment
 - Feature:  Stripe invoices with a metadata key of **is_return** and a value of **true** will automatically be tagged as a return shipment. This will also work for any product appearing in the invoice with the same metadata values.
@@ -286,7 +315,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 - Fixed: Return shipping labels were incorrectly generated with the wrong to and from address.
 
 ---
-# 0.4.11  <span style={{fontSize: "16px"}}>June 10, 2024</span>
+## 0.4.11  <span style={{fontSize: "16px"}}>June 10, 2024</span>
 
 - Fixed: Shipments created from Customer and Payments were not saving their ID as a reference and would incorrectly show that there was no payment or customer data associated with a shipment in the shipment history view
 - Fixed: Settings for carrier defaults were not saving, and once a carrier was sSelected, the incorrect Service and Package options were shown.
@@ -294,7 +323,7 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 0.4.8  <span style={{fontSize: "16px"}}>May 7, 2024</span>
+## 0.4.8  <span style={{fontSize: "16px"}}>May 7, 2024</span>
 
 - Fixed an issue that prevented Invoice ship status from being updated
 - Added a warning in the Settings view if no EasyPost Test API key is found on the account
@@ -303,6 +332,6 @@ Our largest update yet: this release introduces the new full-page Parcelcraft ex
 
 
 ---
-# 0.4.7  <span style={{fontSize: "16px"}}>Apr 24, 2024</span>
+## 0.4.7  <span style={{fontSize: "16px"}}>Apr 24, 2024</span>
 
 - Fixed an issue that prevented test labels from being printed while Stripe is in live mode
