@@ -25,6 +25,26 @@
       "permanent": true
     },
     {
+      "source": "/international-shipping",
+      "destination": "https://www.parcelcraft.com/docs/international-shipping/international-shipments",
+      "permanent": true
+    },
+    {
+      "source": "/international-shipping/international-settings",
+      "destination": "https://www.parcelcraft.com/docs/international-shipping/international-shipments#setting-international-shipping-defaults",
+      "permanent": true
+    },
+    {
+      "source": "/international-shipping/tax-identifiers",
+      "destination": "https://www.parcelcraft.com/docs/international-shipping/international-shipments#tax-identifiers",
+      "permanent": true
+    },
+    {
+      "source": "/international-shipping/international-test-label",
+      "destination": "https://www.parcelcraft.com/docs/international-shipping/international-shipments",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "destination": "https://www.parcelcraft.com/docs/:path*",
       "permanent": true
