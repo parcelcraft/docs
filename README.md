@@ -1,25 +1,32 @@
-# Parcelcraft Docs
+# Parcelcraft Documentation
 
-This is a public repository for maintaining documentation for the [Parcel Craft](https://www.parcelcraft.com) Stripe Apps Marketplace app.
+This repository is the source for the [Parcelcraft documentation](https://www.parcelcraft.com/docs) — the Stripe app for shipping labels, powered by EasyPost.
 
-To read documentation on our website, visit [**Visit the live documentation site →**](https://www.parcelcraft.com/docs)
+**Read the docs:** <https://www.parcelcraft.com/docs>
 
-Based on the [Nextra docs theme](https://nextra.site/docs/docs-theme/start).
+## Contributing
 
-## Local Development
+Spotted a typo, an outdated instruction, or something confusing? Contributions are welcome:
 
-First, run `pnpm i` to install the dependencies.
+- **Small fixes** — use the *Edit this page* link at the bottom of any page on the docs site (or GitHub's pencil icon here). GitHub will fork the repo and open a pull request for you.
+- **Larger changes or questions** — [open an issue](https://github.com/parcelcraft/docs/issues) and we'll take it from there.
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+A maintainer reviews every pull request and will merge it or request changes. Merged changes deploy to the live site automatically.
 
-## Tooling
+### How the content is organized
 
-- [StackEdit](https://stackedit.io/app#) to create markdown files
+- Every page is a Markdown file. A folder with a matching `.md` file (e.g. `getting-started.md` + `getting-started/`) forms a section with sub-pages.
+- `_meta.json` files control sidebar order and titles.
+- Screenshots and images are hosted in the main Parcelcraft app and referenced by absolute path (`/images/...`). If an image needs updating, please open an issue rather than a pull request.
 
-## Submitting changes
+## Branches
 
-Edits and pull request are welcome.  A maintainer will review your pull request and merge it, or request changes if necessary.
+| Branch | Purpose |
+| --- | --- |
+| `main` | Documentation source (this branch) — rendered at [www.parcelcraft.com/docs](https://www.parcelcraft.com/docs) |
+| `redirects` | Redirect config for the old `docs.parcelcraft.com` domain |
+| `legacy` | Frozen snapshot of the previous Nextra-based docs site |
 
 ## License
 
-This project is licensed under the MIT License.
+MIT — see [LICENSE](LICENSE).

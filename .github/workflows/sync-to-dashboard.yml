@@ -1,0 +1,39 @@
+# Every push to main bumps the `docs` submodule pointer in the (private)
+# dashboard-parcelcraft repo, which triggers a Vercel deploy of
+# www.parcelcraft.com with the latest docs.
+#
+# Requires the DASHBOARD_BUMP_TOKEN secret: a fine-grained PAT with
+# Contents read/write on bensontrent/dashboard-parcelcraft.
+name: Sync docs to parcelcraft.com
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: sync-to-dashboard
+  cancel-in-progress: false
+
+jobs:
+  bump-submodule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out dashboard repo
+        uses: actions/checkout@v4
+        with:
+          repository: bensontrent/dashboard-parcelcraft
+          token: ${{ secrets.DASHBOARD_BUMP_TOKEN }}
+
+      # The submodule is never checked out; the gitlink entry in the index
+      # is updated directly to the commit that triggered this workflow.
+      - name: Point docs submodule at this commit
+        run: |
+          git update-index --cacheinfo 160000,${{ github.sha }},docs
+          if git diff --cached --quiet; then
+            echo "Submodule pointer already up to date."
+            exit 0
+          fi
+          git config user.name "parcelcraft-docs-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "docs: sync to parcelcraft/docs@${GITHUB_SHA:0:7}"
+          git push

@@ -1,6 +1,7 @@
-.next
-node_modules
-out
-.github
-.idea
-dist
+node_modules/
+.next/
+out/
+dist/
+.idea/
+.vercel
+.DS_Store
