@@ -44,6 +44,18 @@ Complete the declaration:
    - Origin country
    - Quantity, value, and currency (per item or total)
    - Weight (per item or total)
+
+   > **Finding a tariff code:** Look up your product in the official
+   > [Harmonized Tariff Schedule](https://hts.usitc.gov/) if you ship from
+   > the US, or ask an AI assistant like [Claude](https://claude.ai) to
+   > suggest a code from your product description and then verify it against
+   > the official schedule. The first six digits of a tariff code are
+   > standardized across countries by the
+   > [World Customs Organization](http://www.wcoomd.org/), so a code that's
+   > correct at six digits travels well internationally.
+
+   Every item also needs a weight — carriers won't quote an international
+   shipment with weightless customs items.
 2. **Declare your shipment type** — the contents type (merchandise,
    documents, gift, and so on), what the carrier should do if delivery
    fails (return or abandon), and an EEL PFC, ITN, or AES code where
@@ -51,14 +63,31 @@ Complete the declaration:
 3. **Certify** — check the box confirming the declaration is accurate and
    sign your name. Your signature is remembered for future shipments.
 
-> **Tip:** Please see the [Additional Resources](additional-resources.mdx)
-> for links to official customs information.
-
 You can't buy a label while the customs declaration is incomplete — the
 button at the bottom of the view reads **Review customs** until every
 required field is filled in.
 
-## Step 4: Print the test label
+## Step 4: Get a quote
+
+1. Click **Get Quote**. The quote returns the shipping service levels that
+   are valid for your shipment based on its destination, weight, and
+   dimensions.
+2. If the quote returns errors, read each message and fix the shipment —
+   most quote errors on international shipments come from an incomplete
+   customs declaration, an invalid tariff code, or a missing item weight.
+3. If you still can't find a rate, set the **Carrier** dropdown to
+   **Quote all carriers** and quote again to compare every connected
+   carrier. If another carrier returns rates, the selected carrier or
+   service doesn't support the shipment — not the shipment itself.
+
+   ![Get a quote from all carriers](/images/v2/create-shipment-get-a-quote-with-all-carriers.png)
+
+4. Select the rate you want to use for the test label.
+
+If no carrier returns a rate, see [Troubleshooting](/troubleshooting) for
+more things to check, such as address verification and package size limits.
+
+## Step 5: Print the test label
 
 1. Click **Print test** to generate a test shipping label and customs sheet.
 2. The **Print label** tab opens; click **Print Label** to open them in a
