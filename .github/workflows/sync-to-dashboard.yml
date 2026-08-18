@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out dashboard repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: bensontrent/dashboard-parcelcraft
           token: ${{ secrets.DASHBOARD_BUMP_TOKEN }}
