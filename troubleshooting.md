@@ -39,4 +39,4 @@ error:
    confirm every item is declared, the shipment type is set, and you've
    certified and signed the declaration. Purchase stays blocked until the
    customs declaration is complete — see
-   [International shipping](/docs/international-shipping).
+   [International shipments](/docs/international-shipping/international-shipments).

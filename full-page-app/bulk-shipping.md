@@ -87,8 +87,8 @@ signature) that applies to all of them at once.
 You can't buy until customs are complete: the footer shows
 **Review customs** in place of the buy button until every international
 shipment has its items declared and the declaration is signed. See
-[International shipping](/docs/international-shipping) for the details of each
-field.
+[International shipments](/docs/international-shipping/international-shipments) for
+the details of each field.
 
 ## Buy the labels
 

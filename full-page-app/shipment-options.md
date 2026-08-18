@@ -57,7 +57,7 @@ The options are laid out in two columns and ordered by kind:
 
 Below the option columns you'll also find the shipment's **Tax IDs** —
 sender IDs prefilled from your settings and receiver IDs from the customer's
-Stripe record. See [Tax identifiers](/docs/international-shipping/tax-identifiers).
+Stripe record. See [Tax identifiers](/docs/international-shipping/international-shipments#tax-identifiers).
 
 When the expander is closed, its label shows how many hidden options are set —
 for example **Show more options (2 set)** — so nothing you've configured is

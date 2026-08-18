@@ -10,7 +10,7 @@
 - [Bulk shipping](/docs/full-page-app/bulk-shipping): Select many orders and buy all their labels in one batch.
 - [Shipment options](/docs/full-page-app/shipment-options): Carrier-aware options, third-party billing, and per-option defaults.
 - [1-click shipping](/docs/enable-1-click-shipping): Streamline your shipping process with a single click.
-- [International shipping](/docs/international-shipping): Discover how to handle international shipments and customs requirements.
+- [International shipments](/docs/international-shipping/international-shipments): Discover how to handle international shipments and customs requirements.
 - [Set up a digital scale](/docs/additional-automation/setup-a-digital-scale): Learn how to connect a digital scale for automatic weight capture.
 
 ## Additional resources

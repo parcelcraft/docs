@@ -3,7 +3,10 @@
   "getting-started": "Getting started",
   "full-page-app": "The full-page app",
   "enable-1-click-shipping": "1-click shipping",
-  "international-shipping": "International shipping",
+  "international-shipping": {
+    "title": "International shipments",
+    "href": "/docs/international-shipping/international-shipments"
+  },
   "additional-automation": "Additional automation",
   "get-the-best-shipping-rates": "How to get the best shipping rates",
   "troubleshooting": "Troubleshooting",

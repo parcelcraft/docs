@@ -19,6 +19,6 @@ When shipping products internationally, you can streamline the customs process b
 1. Enter a description for customs in the designated field. This description will be used on the automatically generated customs sheet for each shipment.
 2. Provide the tariff code for the product. The tariff code is essential for determining applicable duties and taxes.
 
-For more detailed information on international shipping with Parcelcraft, please refer to our [International Shipping](/docs/international-shipping) page.
+For more detailed information on international shipping with Parcelcraft, please refer to our [International shipments](/docs/international-shipping/international-shipments) page.
 
 By accurately defining your shippable products and providing the necessary information, you can ensure a smooth and efficient shipping process for both domestic and international orders.

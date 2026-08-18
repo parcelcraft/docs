@@ -85,7 +85,7 @@ need to re-quote, so you never buy a label at a stale rate.
 
 For international shipments, the footer shows **Review customs** until the
 customs declaration is complete — see
-[International shipping](/docs/international-shipping) for details.
+[International shipments](/docs/international-shipping/international-shipments) for details.
 
 ## After you buy
 
