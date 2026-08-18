@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/images/:path*",
+      "destination": "https://www.parcelcraft.com/images/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://www.parcelcraft.com/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-0.xml",
+      "destination": "https://www.parcelcraft.com/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "https://www.parcelcraft.com/robots.txt",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://www.parcelcraft.com/docs/:path*",
+      "permanent": true
+    }
+  ]
+}
