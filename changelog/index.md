@@ -4,6 +4,16 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.1.3 {% small %}August 19, 2026{% /small %}
+
+- Fixed:  Address line 2 was not correctly applied to all shipment create flows
+- Fixed: Address changes made after verification (for example an added company name or custom label fields) were silently dropped from purchased labels. The full address is now always submitted when buying a label, so post-verification edits are kept.
+- Fixed: Every address was treated as residential, which could add residential surcharges to shipments sent to commercial addresses. The carrier's verified residential/commercial determination is now preserved.
+- Fixed: The third custom label text field (Print custom 3) was hidden for FedEx shipments, so its text never reached the label.
+- Fixed: Return, Test label, and Voided badges were missing from the shipment history list; they are now shown again alongside the shipment status.
+
+---
+
 ## 2.1.0 {% small %}August 17, 2026{% /small %}
 
 ### Breaking change
