@@ -4,6 +4,14 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.2.1 {% small %}August 26, 2026{% /small %}
+
+- Added: Some international addresses ambiguously need customs information, so we now offer an escape hatch for these requirements.  Users can now choose to add or remove customs information when shipping between some locations.  Customs requirements can vary by carrier and requirement, even in the same country, for example, shipping between US military addresses and US States, and shipping between some European countries (Like French Guiana and France)
+- Fixed: In the Full Page view: Using custom column sort order or custom column view configuration would not work if the users settings were not correct.  We now self heal malformed configurations.
+- Updated:  Upgraded to Stripe Apps SDK v9.2.1
+
+---
+
 ## 2.1.3 {% small %}August 19, 2026{% /small %}
 
 - Fixed:  Address line 2 was not correctly applied to all shipment create flows
