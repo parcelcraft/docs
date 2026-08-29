@@ -4,13 +4,6 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
-## 2.2.7 {% small %}August 27, 2026{% /small %}
-
-- Fixed: Checkout custom fields (company name, custom label text) were not applied to shipments from one-time payment link purchases with invoices, including 1-click shipments and test labels.
-- Fixed:  Resolved timeout when loading carrier settings for accounts with no connected carriers, or a specific subset of carriers, and improved the error shown when carriers can't be loaded
-
----
-
 ## 2.2.3 {% small %}August 27, 2026{% /small %}
 
 - Fixed: DHL Express services — including DHL Express Worldwide and the NonDoc services — now appear correctly on international shipments
