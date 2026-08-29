@@ -2,6 +2,9 @@
 
 Enhance your shipping workflow with these automation features:
 
+## Checkout Custom Fields on Labels
+Print what your customers enter at checkout — a company name, a product choice, a gift note — directly on your shipping labels by [mapping payment link and checkout session custom fields](/docs/additional-automation/custom-field-mapping).
+
 ## Digital Scales
 Streamline weight input by connecting a [supported digital scale](https://www.printnode.com/en/docs/supported-scales) to [Parcelcraft via PrintNode](/docs/additional-automation/setup-a-digital-scale).
 
