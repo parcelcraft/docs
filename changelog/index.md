@@ -4,7 +4,7 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
-## 2.2.1 {% small %}August 27, 2026{% /small %}
+## 2.2.3 {% small %}August 27, 2026{% /small %}
 
 - Fixed: DHL Express services — including DHL Express Worldwide and the NonDoc services — now appear correctly on international shipments
 - Fixed: If Parcelcraft ever can't tell which of a carrier's services fit your destination, it now shows all of them instead of hiding the carrier
