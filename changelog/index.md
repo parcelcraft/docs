@@ -4,6 +4,15 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.2.1 {% small %}August 27, 2026{% /small %}
+
+- Fixed: DHL Express services — including DHL Express Worldwide and the NonDoc services — now appear correctly on international shipments
+- Fixed: If Parcelcraft ever can't tell which of a carrier's services fit your destination, it now shows all of them instead of hiding the carrier
+- Added: DHL Express lithium-battery (hazmat) shipment options
+- Fixed: The image preview of the label would appear broken before printing
+
+---
+
 ## 2.2.1 {% small %}August 26, 2026{% /small %}
 
 - Added: Some international addresses ambiguously need customs information, so we now offer an escape hatch for these requirements.  Users can now choose to add or remove customs information when shipping between some locations.  Customs requirements can vary by carrier and requirement, even in the same country, for example, shipping between US military addresses and US States, and shipping between some European countries (Like French Guiana and France)
