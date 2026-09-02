@@ -4,6 +4,24 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.2.8 {% small %}September 2, 2026{% /small %}
+
+- Added: FedEx Wallet carrier account--renamed from FedEx Ground--now offer the full standard FedEx service lineup — Ground, Home Delivery, 2Day, overnight, and international services, with matching shipment options — instead of being limited to Ground Economy due to a recent EasyPost update
+- Added: UPS predefined packaging (UPS letter, express boxes, tubes, and Paks) is now available on UPS accounts created through Parcelcraft, which previously showed no packaging choices
+- Added: Improved logging for shipments with errors - This will help us improve Parcelcraft for future users.
+- Fixed: Return shipments now shows the correct address labels:  Return to / Return from, rather than "Ship from / Ship to"
+- Fixed: DHL Express Account and DHL eCommerce Account carriers now show a domestic service warning: these carriers are not used for shipping within the US
+- Fixed: DHL Express wallet accounts (which support US exports only) no longer list domestic services that could never return a rate
+- Fixed: DHL eCommerce shipments now automatically include the merchant name the carrier requires on the label
+- Fixed: Selecting a DHL Express box could quote at the bare-minimum parcel rate because the box dimensions were never sent to the carrier. Choosing a DHL box now fills in its standard dimensions automatically, and measurements you enter yourself always take priority
+- Fixed: "Quote all carriers" could silently return rates from only one carrier when a carrier-specific package type was selected, because every other carrier declined the request. Cross-carrier quotes now send only neutral package details (weight and dimensions) so every carrier can answer
+- Fixed: FedEx Wallet shipments can only bill the sender, so third-party and receiver billing options are no longer offered on wallet accounts. Selecting them previously caused every rate to be declined without explanation
+- Fixed: When a carrier declines to quote, its error message now appears next to the rate picker, so an empty rate list always comes with a reason
+- Fixed: FedEx International Priority was mislabeled "FedEx International (First)" in service menus, making it indistinguishable from the more expensive FedEx International First service
+- Fixed: Package dimensions of zero left over from older saved package defaults no longer cause carriers to reject quotes; invalid dimensions are corrected automatically when the shipment is submitted
+
+---
+
 ## 2.2.7 {% small %}August 31, 2026{% /small %}
 
 - Fixed: Checkout custom fields (company name, custom label text) were not applied to shipments from one-time payment link purchases with invoices, including 1-click shipments and test labels.
