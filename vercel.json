@@ -48,6 +48,11 @@
       "source": "/:path*",
       "destination": "https://www.parcelcraft.com/docs/:path*",
       "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://www.parcelcraft.com/docs",
+      "permanent": true
     }
   ]
 }
