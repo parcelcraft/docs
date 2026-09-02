@@ -6,7 +6,7 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ## 2.2.8 {% small %}September 2, 2026{% /small %}
 
-- Added: FedEx Wallet carrier account--renamed from FedEx Ground--now offer the full standard FedEx service lineup — Ground, Home Delivery, 2Day, overnight, and international services, with matching shipment options — instead of being limited to Ground Economy due to a recent EasyPost update
+- Added: FedEx Wallet carrier account--renamed from FedEx Ground--now offers the full standard FedEx service lineup — Ground, Home Delivery, 2Day, overnight, and international services, with matching shipment options — instead of being limited to Ground Economy due to a recent EasyPost update
 - Added: UPS predefined packaging (UPS letter, express boxes, tubes, and Paks) is now available on UPS accounts created through Parcelcraft, which previously showed no packaging choices
 - Added: Improved logging for shipments with errors - This will help us improve Parcelcraft for future users.
 - Fixed: Return shipments now shows the correct address labels:  Return to / Return from, rather than "Ship from / Ship to"
