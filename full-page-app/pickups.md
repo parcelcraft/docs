@@ -84,5 +84,5 @@ edited after purchase — to change one, cancel it and schedule a new
 pickup.
 
 > Shipping with USPS or DHL and your driver already comes by? An
-> [end-of-day scan form](/docs/full-page-app/end-of-day) lets them accept the
+> [end-of-day scan form](/docs/additional-automation/end-of-day-scan-forms) lets them accept the
 > whole day's shipments with a single scan — no pickup request needed.

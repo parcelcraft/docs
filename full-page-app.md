@@ -62,4 +62,4 @@ Above the tabs, a row of buttons gives you quick access to common tasks:
 | **+ Create shipment** | Start a [blank shipment](/docs/full-page-app/create-shipment) that isn't tied to a payment or invoice |
 | **Wallet** | View and add funds to your [EasyPost balance](/docs/full-page-app/wallet) |
 | **Pickups** | Schedule a [carrier driver pickup](/docs/full-page-app/pickups) for your packages |
-| **End of day** | Create an [end-of-day scan form](/docs/full-page-app/end-of-day) (shipping manifest) for carrier pickup |
+| **End of day** | Create an [end-of-day scan form](/docs/additional-automation/end-of-day-scan-forms) (shipping manifest) for carrier pickup |

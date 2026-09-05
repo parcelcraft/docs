@@ -136,5 +136,5 @@ select shipments and click **Print labels** in its bulk actions bar.
 
 Once the labels are on their boxes, schedule a
 [driver pickup](/docs/full-page-app/pickups) or hand your driver an
-[end-of-day scan form](/docs/full-page-app/end-of-day) so the whole batch is
+[end-of-day scan form](/docs/additional-automation/end-of-day-scan-forms) so the whole batch is
 accepted with one scan.
