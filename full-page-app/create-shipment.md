@@ -113,7 +113,8 @@ Click **Print Label** to open the label in a new browser tab:
 
 Choose **4 x 6" label** for thermal label printers or **8.5 x 11" label**
 for standard paper, toggle **Print packing slip** to include one (available
-when the label was created from an invoice), and click **Print**.
+for labels created from an invoice, checkout session, or payment link), and
+click **Print**.
 
 > Printed a test label but ready for the real thing? The Print label tab
 > offers **Re-edit & buy real label**, which returns you to the shipment with

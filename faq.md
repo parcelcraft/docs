@@ -55,15 +55,15 @@ A: If you hover your mouse over the **1-click ship** button, you will see a popu
 
 A: The FedEx ground carrier account (known as FedEx Default in your EasyPost dashboard) is limited in the types of service it offers.  Add a FedEx account by adding a FedEx carrier in the EasyPost dashboard to enable quotes and shipments for overnight shipping.
 
-### Q: Why don't my invoices appear in the Orders list?
+### Q: Why don't my orders appear in the Orders list?
 
-A: When an invoice is finalized, our Parcelcraft server determines whether it is shippable:
+A: Parcelcraft builds orders from checkout sessions (including payment links) and invoices — no invoice setup is required. When a checkout session completes or an invoice is finalized, our Parcelcraft server determines whether the order is shippable:
 
-1. If there is a shipping rate attached to the invoice, it will appear in your [Orders list](/docs/full-page-app/orders-list) as **Unshipped**.
-2. If any product in your invoice is shippable, it will appear in your Orders list as **Unshipped**.
+1. If the customer selected a shipping rate at checkout, or a shipping rate is attached to the invoice, it will appear in your [Orders list](/docs/full-page-app/orders-list) as **Unshipped**.
+2. If any product in the order is shippable, it will appear in your Orders list as **Unshipped**.
 3. Your default product "shippable" setting is used for products where you haven't set a shippable status.
 
-This calculation happens when your invoice is finalized — draft invoices don't appear in the Orders list. If invoices that should be shippable are not appearing, browse to the products used in your invoice, open the Parcelcraft Shipping app, and confirm they are marked as "shippable" in the Parcelcraft app. (Changing a product's shippable setting applies to future invoices; it doesn't re-evaluate existing orders.)
+This calculation happens when the checkout session completes or the invoice is finalized — draft invoices and unpaid checkout sessions don't appear in the Orders list. If orders that should be shippable are not appearing, browse to the products in the order, open the Parcelcraft Shipping app, and confirm they are marked as "shippable" in the Parcelcraft app. (Changing a product's shippable setting applies to future orders; it doesn't re-evaluate existing ones.)
 
 To add an order to the Orders list manually, browse to the invoice in Stripe and change its status to "Unshipped" in the Parcelcraft app, or add metadata to your Stripe invoice with a key of `ship_status` and a value of `unshipped`. The change syncs to Parcelcraft within a few seconds; if you already have the Orders list open, click **Refresh data** to see it (the list also refreshes itself every 10 minutes).
 

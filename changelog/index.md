@@ -4,6 +4,22 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.3.0 {% small %}September 8, 2026{% /small %}
+
+- Added: Packing slips are now available for labels created from checkout sessions and payment links, in addition to invoices
+- Fixed: Selecting a carrier's published packaging (for example USPS SoftPack) no longer appears to lose the selection. Previously the packaging picker was swapped out for length, width, and height fields, which read as the choice being dropped. The picker now stays on screen in every package editor (shipment drawer, bulk shipping, shipping rate defaults, and settings), and dimension fields only appear as a second row when the package actually needs them
+- Fixed: Dimensions are now required only where the carrier needs them: custom-size packages, the generic "Parcel"/"Package" codes, and DHL Express boxes. USPS, FedEx, and UPS rate their published packaging by code alone, so their metadata size notes ("Varies based on service level") no longer force dimension entry
+- Fixed: USPS could reject a pickup request with "An invalid address was entered" when the saved warehouse address had a placeholder in address line 2 (such as "0"). Pickup addresses are now cleaned before submission: blank fields and placeholder-only unit lines are dropped, phone numbers are normalized, and only the fields the carrier accepts are sent
+- Fixed: Scheduling a pickup in the evening could request the wrong day. The date list was built from the UTC calendar date, which is already tomorrow every evening in the Americas, so an option labeled "Saturday" could request a Sunday pickup that USPS has no rates for. Dates now use your local calendar
+- Added: The pickup form now shows which time zone the pickup window is interpreted in (for example "Eastern Daylight Time (America/New_York)")
+- Added: Scan forms can now be created in test mode, using your test labels, so the end-of-day manifest flow can be tried before going live. A note explains that test forms cover test labels only and can't be handed to a carrier
+- Added: A "Search shipments from" selector on the scan form view lets you widen the window from the past day up to the past 30 days when looking for un-manifested shipments, and the scan form history follows the same window
+- Fixed: When more than 100 un-manifested shipments were found, the scan form view only grouped the last page of results. All pages are now included
+- Improved: Scan form history rows were restyled, with the shipped-from address and tracking numbers grouped in the info tooltip
+- Improved: Carrier timeouts and outages now show a clear message ("The carrier took too long to respond and the request timed out. Please try again in a moment." or "The shipping service is temporarily unavailable") instead of a bare "504 / Request failed"
+
+---
+
 ## 2.2.8 {% small %}September 2, 2026{% /small %}
 
 - Added: FedEx Wallet carrier account--renamed from FedEx Ground--now offers the full standard FedEx service lineup — Ground, Home Delivery, 2Day, overnight, and international services, with matching shipment options — instead of being limited to Ground Economy due to a recent EasyPost update

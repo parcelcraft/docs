@@ -10,8 +10,8 @@ Parcelcraft adds metadata to your PaymentIntents, Invoices, Shipping Rates and P
 
 ## Stripe Invoice and PaymentIntents metadata
 
-When an invoice is created, our app automatically will determine if the invoice you've created is for a physical product or for a service.  We use your Stripe Product shippable status, or if you've selected a shipping rate as part of your invoice to indicate via your Stripe metadata if an invoice is shippable.
-Our app will automatically add metadata to Stripe invoices prior to shipment.  If an invoice uses a shipping rate or if any product in the invoice is shippable, metadata with a key of "ship_status" and a value of "unshipped" will be added to your invoice metadata.  Invoices that are marked as unshipped will appear in the unified [Orders list](/docs/full-page-app/orders-list) in Parcelcraft with an **Unshipped** status.
+When a checkout session completes (including payments made through payment links) or an invoice is finalized, our app automatically determines whether the order is for a physical product or for a service.  We use your Stripe Product shippable status, or the shipping rate selected at checkout or attached to the invoice, to indicate via your Stripe metadata whether the order is shippable.  No invoice is required.
+Our app will automatically add metadata to the PaymentIntent, and to the invoice when one exists, prior to shipment.  If the order uses a shipping rate or if any product in the order is shippable, metadata with a key of "ship_status" and a value of "unshipped" will be added.  Orders that are marked as unshipped will appear in the unified [Orders list](/docs/full-page-app/orders-list) in Parcelcraft with an **Unshipped** status.
 
 > **How ship status is written:** when you change a ship status in the
 > Parcelcraft app, the change is written through the Parcelcraft backend,

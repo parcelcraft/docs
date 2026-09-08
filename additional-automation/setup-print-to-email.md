@@ -18,8 +18,9 @@ without a print dialog.
 3. Enter the address in the **Email labels to:** field — it's prefilled
    with your Stripe dashboard email address.
 
-If packing slips are enabled in your print settings, they're attached too
-(packing slips are only supported for labels created from an invoice).
+If packing slips are enabled in your print settings, they're attached too.
+Packing slips are available for labels created from invoices, checkout
+sessions, and payment links.
 
 ## Tools to automatically print email attachments
 

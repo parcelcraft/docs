@@ -1,10 +1,10 @@
 # The Orders list
 
 The **Create shipment** tab of the [full-page app](/docs/full-page-app) shows a
-unified Orders list built from your Stripe payments and invoices. Each row is
-an order: the customer, when it was paid, its shipping status, payment status,
-total, the shipping rate the customer selected at checkout, the invoice
-number, and a description of the items ordered.
+unified Orders list built from your Stripe checkout sessions, payments, payment links,
+and invoices. Each row is an order: the customer, when it was paid, its
+shipping status, payment status, total, the shipping rate the customer selected
+at checkout, the invoice number, and a description of the items ordered.
 
 ![How to open the Parcelcraft app and full-page view](/images/v2/how-to-open-the-parcelcraft-app-and-fullpage-view.png)
 

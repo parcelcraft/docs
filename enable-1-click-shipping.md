@@ -11,7 +11,9 @@ Once you have configured all the settings necessary for 1-click shipping the **1
 
 When you click the **1-click ship** button the label is automatically printed. If you have a digital scale attached, it is used to get the weight of the package before printing the label.
 
-The following pages in this section guides you through the necessary settings and defaults you need to configure to take advantage of this powerful feature.
+Parcelcraft builds orders from any Stripe payment. Checkout sessions, payment links, and invoices all work, and no invoice setup is required.
+
+The following pages in this section guide you through the necessary settings and defaults you need to configure to take advantage of this powerful feature.
 
 ## Recommended tools for 1-click shipping
 
