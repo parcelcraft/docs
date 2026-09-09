@@ -43,7 +43,7 @@ error:
 
 ## Every label is insured automatically
 
-If each label you buy shows **Insured for $50.00** and **Insurance cost
+If each label you buy shows **Insured for $X** and **Insurance cost
 $1.00** without you clicking **Add insurance**, the **Automatic shipping
 insurance** add-on is turned on in your EasyPost account. It insures every
 label bought through EasyPost, including labels from Parcelcraft.
