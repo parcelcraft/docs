@@ -1,28 +1,33 @@
 # Strategies to find the best shipping rates
 
-EasyPost accounts include automatic discounted shipping rates with select carriers—no application or qualification required. View the complete list of carriers offering discounts at: https://www.easypost.com/discounted-shipping
+EasyPost accounts include automatic discounted shipping rates with select carriers—no application or qualification required. View the complete list of carriers offering discounts at: <https://www.easypost.com/discounted-shipping>
 
 Our advertised shipping rates reflect EasyPost's discounted pricing.
 
-## Adding your own carrier accounts
+## Use your own negotiated rates with FedEx, UPS, or DHL
 
-If you have negotiated rates with carriers like UPS, FedEx, or DHL, add your carrier accounts at: https://app.easypost.com/account/settings?tab=carriers
+If you already have an account with FedEx, UPS, or DHL, your negotiated rates can beat EasyPost's discounts. EasyPost lets you bring your own carrier account for $20 a month.
 
-The carrier management page has two sections:
+Labels on your own account are billed directly by your carrier, not your EasyPost wallet. EasyPost charges a $0.01 fee per label plus the $20 monthly subscription.
 
-1. **EasyPost Carrier Accounts**: Use EasyPost's discounted rates, billed through EasyPost
-2. **My Carrier Accounts**: Use your negotiated rates, billed directly by your carrier (click "Add carrier" to set up)
+If you ship more than 20 packages a month, your own account will likely save you money.
+
+**To add your carrier account:**
+
+1. Open the [carrier settings page](https://app.easypost.com/account/settings?tab=carriers). It has two sections:
+   - **EasyPost Carrier Accounts**: EasyPost's discounted rates, billed through your EasyPost wallet
+   - **My Carrier Accounts**: your negotiated rates, billed by your carrier
+2. Under **My Carrier Accounts**, click "Add carrier" and enter your account details. EasyPost's guide covers each carrier: [Bring Your Own Carrier Account to EasyPost](https://support.easypost.com/hc/en-us/articles/25246240687373-Bring-Your-Own-Carrier-Account-to-EasyPost)
+3. Refresh the Parcelcraft Shipping app to see your new carrier.
 
 ![Create a carrier in EasyPost](/images/easy-post-carrier-selection.png)
-
-
-After adding carriers in EasyPost, refresh the Parcelcraft Shipping app to see your updated carrier options.
 
 ## Getting the best rates
 
 Create labels in the Parcelcraft Shipping app to compare price quotes across all carriers. The system returns only rates compatible with your shipment specifications.
 
 **Example**: For USPS First Class Letter rates, select:
+
 - Carrier: USPS
 - Packaging: Letter  
 - Weight: Under 3.5 ounces
