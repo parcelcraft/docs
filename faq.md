@@ -55,6 +55,10 @@ A: If you hover your mouse over the **1-click ship** button, you will see a popu
 
 A: The FedEx ground carrier account (known as FedEx Default in your EasyPost dashboard) is limited in the types of service it offers.  Add a FedEx account by adding a FedEx carrier in the EasyPost dashboard to enable quotes and shipments for overnight shipping.
 
+### Q: How do I turn automatic shipping insurance on or off?
+
+A: Automatic shipping insurance is an EasyPost add-on that insures every label you buy — including labels bought in Parcelcraft from the drawer, 1-click ship, or the full-page app. Turn it on or off from the shipping add-ons page in your EasyPost dashboard. See [Automatic insurance](/docs/full-page-app/insurance#automatic-insurance) for the steps.
+
 ### Q: Why don't my orders appear in the Orders list?
 
 A: Parcelcraft builds orders from checkout sessions (including payment links) and invoices — no invoice setup is required. When a checkout session completes or an invoice is finalized, our Parcelcraft server determines whether the order is shippable:

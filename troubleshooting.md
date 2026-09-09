@@ -40,3 +40,15 @@ error:
    certified and signed the declaration. Purchase stays blocked until the
    customs declaration is complete — see
    [International shipments](/docs/international-shipping/international-shipments).
+
+## Every label is insured automatically
+
+If each label you buy shows **Insured for $50.00** and **Insurance cost
+$1.00** without you clicking **Add insurance**, the **Automatic shipping
+insurance** add-on is turned on in your EasyPost account. It insures every
+label bought through EasyPost, including labels from Parcelcraft.
+
+Turn it off under
+[Shipping add-ons](https://app.easypost.com/account/shipping-settings?tab=shipping-add-ons)
+in the EasyPost dashboard — the status reads **Not enrolled** once it's off.
+See [Automatic insurance](/docs/full-page-app/insurance#automatic-insurance) for the full steps.
