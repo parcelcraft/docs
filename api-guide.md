@@ -35,12 +35,12 @@ Supported metadata prior to shipment
 
 ### After shipment
 
-PaymentIntents and Invoices will mirror each other's metadata values at the time of shipment.  If no invoice exists for a paymentIntent, only the paymentIntent metadata will reflect these values:
+PaymentIntents and Invoices will mirror each other's metadata values at the time of shipment.  If no invoice exists for a PaymentIntent, only the PaymentIntent metadata will reflect these values:
 
 | Metadata key | Metadata value example |
 | -- | -- |
 | ship_date | **2024-05-24T18:07:34Z** |
-| ship_status | **shipped** (Could be value of unshipped, canceled, back_ordered or unshippable.  If the ship_status metadata does not exist on the invoice or payment we assume it is to be not shippable) |
+| ship_status | **shipped** (Could also be unshipped, canceled, back_ordered, or unshippable. If the ship_status metadata does not exist on the invoice or payment, we assume it is not shippable) |
 | shipment_id | **shp_bdf04565433...** The EasyPost shipment ID |
 | tracking_number | **9434600110368044455854** |
 | tracking_URL | **<https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9434600110368044455854>** |
@@ -49,7 +49,7 @@ PaymentIntents and Invoices will mirror each other's metadata values at the time
 
 ## Stripe Product metadata
 
-All values are optional, but having product defaults help prepare your shipment according to your product metadata.
+All values are optional, but having product defaults helps prepare your shipment according to your product metadata.
 
 | Metadata key | Metadata value example |
 | -- | -- |
@@ -62,15 +62,15 @@ All values are optional, but having product defaults help prepare your shipment 
 
 ## Stripe Shipping Rate metadata
 
-All values are optional, but having product defaults help prepare your shipment according to your shipping rate metadata, if you use shipping rates in your Stripe Invoices.
+All values are optional, but having shipping rate defaults helps prepare your shipment according to your shipping rate metadata if you use shipping rates in your Stripe Invoices.
 
 | Metadata key | Example | Description |
 | -- | -- | -- |
-| carrier_id | `ca_c38cd24...` | Your EasyPost carrier id |
+| carrier_id | `ca_c38cd24...` | Your EasyPost carrier ID |
 | package_code | `Letter` | The package code for your EasyPost carrier. Defaults to `Package`. See <https://www.easypost.com/carriers> |
 | packaging_weight | `.26` | The weight of your packaging.  The final weight of your package will be based on your product weight and product quantity |
 | packaging_weight_unit | `ounce` | Either `gram`, `ounce`, `pound`, or `kilogram`.  Defaults to `ounce` |
-| service_code | `Priority` | The compatible service level (Ground, Priority NextDayAir) for your EasyPost carrier. See <https://www.easypost.com/carriers> |
+| service_code | `Priority` | The compatible service level (Ground, Priority, NextDayAir) for your EasyPost carrier. See <https://www.easypost.com/carriers> |
 | width | `10` | The default packaging width in the dimension unit (inches or centimeters) as set in your Parcelcraft carrier settings |
 | length | `5` | See above |
 | height | `8` | See above |

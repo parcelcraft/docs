@@ -33,7 +33,7 @@ To use Parcelcraft for real shipping labels you'll also need to enter your [bill
 
 ## Get your own negotiated carrier rates
 
-You can use EasyPost's default carrier accounts or [add your own carrier accounts](https://www.easypost.com/account/settings?tab=carriers&utm_source=Parcelcraft) to get your negotiated rates. After you add your custom carrier accounts in EasyPost, refresh your Parcelcraft Shipping app in Stripe to see your latest shipping options
+You can use EasyPost's default carrier accounts or [add your own carrier accounts](https://www.easypost.com/account/settings?tab=carriers&utm_source=Parcelcraft) to get your negotiated rates. After you add your custom carrier accounts in EasyPost, refresh your Parcelcraft Shipping app in Stripe to see your latest shipping options.
 
 
 
@@ -43,7 +43,7 @@ You can use EasyPost's default carrier accounts or [add your own carrier account
 
 #### I can't find my EasyPost API key
 
-Make sure you have added your billing details and your address in your EasyPost dashboard to confirm your identity.  If you still can't find you EasyPost API key [in your EasyPost account on this page](https://www.easypost.com/account/settings?tab=api-keys), you'll need to contact [EasyPost Support](https://support.easypost.com/hc/en-us/requests/new) to ask them to enable API Keys on your account. 
+Make sure you have added your billing details and your address in your EasyPost dashboard to confirm your identity.  If you still can't find your EasyPost API key [in your EasyPost account on this page](https://www.easypost.com/account/settings?tab=api-keys), you'll need to contact [EasyPost Support](https://support.easypost.com/hc/en-us/requests/new) to ask them to enable API Keys on your account. 
 
 ####  I don't have a Stripe account
 

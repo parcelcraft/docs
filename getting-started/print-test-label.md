@@ -56,5 +56,5 @@ section to enable 1-click shipping.
 
 If you encounter any issues or have questions during this process, don't
 hesitate to reach out to [support@parcelcraft.com](mailto:support@parcelcraft.com)
-for assistance. They are available to help you troubleshoot any problems and
+for assistance. Our support team is available to help you troubleshoot any problems and
 ensure a smooth experience with the platform.

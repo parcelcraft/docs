@@ -1,25 +1,25 @@
 # Connect Your EasyPost Account to Parcelcraft
 
-EasyPost is our shipping label partner, you'll pay for shipping costs and connect your carrier accounts in the EasyPost dashboard. Follow the steps below to set up your EasyPost account and connect it to Parcelcraft.
+EasyPost is our shipping label partner. You'll pay for shipping costs and connect your carrier accounts in the EasyPost dashboard. Follow the steps below to set up your EasyPost account and connect it to Parcelcraft.
 
 ## Create or Log In to Your EasyPost Account
 
 - If you don't have an EasyPost account, [sign up for one here](https://www.easypost.com/signup?utm_source=Parcelcraft).
-- If you already have an account, [login to EasyPost](https://www.easypost.com/login?utm_source=Parcelcraft).
+- If you already have an account, [log in to EasyPost](https://www.easypost.com/login?utm_source=Parcelcraft).
 
 ## Find Your EasyPost Production API Key
 
 1. Log in to your EasyPost account and navigate to the [EasyPost API Keys tab on the Account Settings page](https://www.easypost.com/account/settings?tab=api-keys&utm_source=Parcelcraft).
 
-   > **Note**: **If you DO NOT see an "API Keys" tab in EasyPost**, you may need to first add your billing details and address in EasyPost.  If you still don't have access to your API keys [in your EasyPost account on this page](https://www.easypost.com/account/settings?tab=api-keys), you'll need to contact [EasyPost Support](https://support.easypost.com/hc/en-us/requests/new) to ask them to enable your account for API Keys 
+   > **Note**: **If you DO NOT see an "API Keys" tab in EasyPost**, you may need to first add your billing details and address in EasyPost.  If you still don't have access to your API keys [in your EasyPost account on this page](https://www.easypost.com/account/settings?tab=api-keys), you'll need to contact [EasyPost Support](https://support.easypost.com/hc/en-us/requests/new) to ask them to enable your account for API Keys.
 
-2. In your EasyPost account confirm you have both production and test keys set up in your account.
+2. In your EasyPost account, confirm you have both production and test keys set up.
 
    ![EasyPost Test and Production API Key](/images/easypost-test-and-production-keys.png)
 
-3. If you don't have a test API key, click on *Add additional key** on your  [API Keys tab](https://www.easypost.com/account/settings?tab=api-keys) in your EasyPost settings page.
+3. If you don't have a test API key, click on **Add additional key** on your [API Keys tab](https://www.easypost.com/account/settings?tab=api-keys) in your EasyPost settings page.
 
-   ![Add a EasyPost test API Key](/images/easypost-add-test-key.png)
+   ![Add an EasyPost test API Key](/images/easypost-add-test-key.png)
 
    > **IMPORTANT:** You **must have both a production and a test key** in EasyPost for Parcelcraft to have the ability to create test labels.
 
@@ -51,12 +51,12 @@ To print real shipping labels, you'll also need to add your Billing Details in y
 1. Once logged into the EasyPost dashboard, click on **Account Settings** in the left-hand sidebar.
 2. Select the **Billing** tab.
 
-![Easypost Billing Account Page](/images/Billing_UX.png)
+![EasyPost Billing Account Page](/images/Billing_UX.png)
 
 ## Set Up Your Payment Methods
 
 1. Click the **Setup Wallet** button.
-   - If you already have a payment method associated with your account, can click **Add a Secondary Account** or **Add a Primary Account**.
+   - If you already have a payment method associated with your account, you can click **Add a Secondary Account** or **Add a Primary Account**.
    - Note: You can only have two payment methods added to your account at a time. If you need to add a different payment method, you must first delete one of the existing payment methods using the three-dot button on the right of the payment method.
 
 2. Choose the option to **Add a Bank Account**.

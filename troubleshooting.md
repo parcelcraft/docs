@@ -2,7 +2,7 @@
 
 ## I get errors when I create a quote or shipment
 
-Typically the solution to fixing the problem can be found by carefully reading
+Typically, the solution to the problem can be found by carefully reading
 the error message. There are a few things you can try to resolve a shipment
 error:
 

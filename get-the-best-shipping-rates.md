@@ -37,6 +37,6 @@ You can see the $0.69 rate for First Class is better than the public rate of $0.
 
 When you request a quote for your shipment, the app will return only rates compatible with the shipping information (weight, packaging type and carrier) you provide.  
 
-In your workflow, when you create a shipment, you may want to get a quote from among all your carriers first, and then when you've narrowed down your best selection for a carrier, re-quote the shipment with the specific carrier, with any specialized packaging, for example, sending a letter in UPS letter packaging for overnight shipments is significantly cheaper than sending a package with specified dimensions of the same size.
+In your workflow, when you create a shipment, you may want to get a quote from among all your carriers first, and then when you've narrowed down your best selection for a carrier, re-quote the shipment with the specific carrier and any specialized packaging. For example, sending a Letter in UPS letter packaging for overnight shipments is significantly cheaper than sending a package with specified dimensions of the same size.
 
 When quoting "All carriers," the system removes packaging type and carrier specifications for compatibility. Always request carrier-specific quotes to see the best rates for your exact requirements.

@@ -84,7 +84,7 @@ signature) that applies to all of them at once.
 
 ![The Review customs step for a batch](/images/v2/create-shipment-customs-tab.png)
 
-You can't buy until customs are complete: the footer shows
+You can't buy until the customs declarations are complete: the footer shows
 **Review customs** in place of the buy button until every international
 shipment has its items declared and the declaration is signed. See
 [International shipments](/docs/international-shipping/international-shipments) for

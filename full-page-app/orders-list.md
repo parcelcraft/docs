@@ -52,7 +52,7 @@ Filter chips under the status counts let you narrow the list:
 
   ![Filter orders by timeframe and force a new order sync](/images/v2/filter-orders-by-time-frame-and-resync.png)
 
-Click **Reset filters** to clear everything and start over to your main unshipped list.
+Click **Reset filters** to clear everything and return to your main unshipped list.
 
 > **Missing an order?** Check the **Force a new order sync** option at the
 > bottom of the Timeframe filter and apply it. Parcelcraft re-syncs your
