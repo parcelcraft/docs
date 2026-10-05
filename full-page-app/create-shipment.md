@@ -102,8 +102,8 @@ From here you can:
 - **Send to PrintNode printer** — appears when PrintNode is configured, and
   labels can also print automatically as soon as they're purchased.
 - Confirm the **tracking email** — for test labels, a preview of the
-  customer notification is emailed to your origin address instead of the
-  customer.
+  customer notification is emailed to your own Stripe user email instead of
+  the customer.
 - Schedule a [driver pickup](/docs/full-page-app/pickups) so the carrier
   collects the package, instead of dropping it off.
 

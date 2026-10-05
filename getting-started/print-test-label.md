@@ -34,8 +34,8 @@ opens showing the test label, the recipient, and a tracking preview:
 
 ![A test label ready to print](/images/v2/create-shipment-print-shipment.png)
 
-A test tracking notification is also emailed to your origin address so you
-can preview exactly what your customers will receive.
+A test tracking notification is also emailed to your own Stripe user email so
+you can preview exactly what your customers will receive.
 
 Click **Print Label** to open the label in a new browser tab, choose
 **4 x 6" label** (thermal printers) or **8.5 x 11" label** (standard paper),

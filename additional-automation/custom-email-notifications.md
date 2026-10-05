@@ -49,7 +49,7 @@ Shipping confirmation from {{#if from_address.company}}{{from_address.company}}{
 
 Hi {{to_address.name}},
 
-Good news! Your shipment from 
+Your shipment from 
 {{#if from_address.company}}{{from_address.company}}{{else}}{{from_address.name}}{{/if}} 
 is on its way.
 
@@ -245,4 +245,4 @@ Now that you've created and tested your Customer Notification email, select that
 
 ## Test your email
 
-To create a test email using your new template, create a shipment and select **Print test**. When you create a test label, a test email will be sent to the email you set in **your origin address**.
+To create a test email using your new template, create a shipment and select **Print test**. When you create a test label, a test email will be sent to **your own Stripe user email**, so you can preview what customers receive.

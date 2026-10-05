@@ -4,6 +4,42 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.4.2 {% small %}October 5, 2026{% /small %}
+
+### Multi-parcel shipments
+
+- Added: Ship one order in several boxes. Click **Add a parcel** in the shipment editor to add a box; each box has its own packaging, weight, dimensions, customs contents, rate, and insurance, while the address, carrier, service, and shipment options are shared across the order
+- Added: The footer quotes and buys every box together ("Buy 3 labels", "3 packages — $24.30"), and rows, the customs tab, and the print tab are captioned "Package 2 of 3"
+- Added: **Ship another package** on the print tab starts another label to the same address with the same settings
+- Added: Multi-parcel orders write comma-separated `tracking_numbers` and `shipment_ids` to Stripe metadata. The existing `tracking_number`, `shipment_id`, `tracking_URL`, and `service_name` fields are unchanged and hold the first label, so current integrations keep working
+- Improved: The customer gets one tracking email listing every box's tracking number, and the packing list prints once per order rather than on every label
+
+### Print label tab
+
+- Improved: Redesigned layout. **Send to PrintNode printer** now sits beside the browser print button in the footer, so every way to print is in one place
+- Added: Void a label straight from the print tab. **Void label** asks for confirmation, the row then shows **Label voided**, and **Create new label** starts a replacement with the same settings
+- Added: Your EasyPost wallet balance is shown after a purchase, with a **Manage balance** link
+- Fixed: Insurance on a multi-parcel order defaults to the order total split across its boxes, instead of insuring every box for the full amount
+
+### After-purchase options
+
+- Added: A new **After purchase** section under **Show more options** holds the choices that take effect once the label is bought
+- Added: **Insure shipment** — choose an amount (or use the order total) before buying, and the insurance is purchased automatically with the label. Use the gear to insure every future shipment for its order total
+- Added: **Don't send tracking email** — hold the tracking email for a single shipment. The email is saved in your Parcelcraft dashboard and sent only when you click **Send now**. The gear turns customer emails off for all future shipments
+
+### Tracking emails
+
+- Added: The print tab shows where the tracking email stands — sent, on hold, or "sends in 5 min" — with **Send email now** and **Edit email template** in its gear menu
+- Added: Shipment history lists every email sent for a shipment (shipping confirmation, return label, void notice) with its delivery events: delivered, opened, bounced, and so on
+- Changed: Test-mode tracking emails now go to your Stripe user email instead of the ship-from address, so the preview reaches whoever is testing
+- Improved: The notification settings and the email compose form link directly to the email template designer
+
+### Other
+
+- Updated: Upgraded to Stripe Apps SDK v9.4.0
+
+---
+
 ## 2.3.0 {% small %}September 8, 2026{% /small %}
 
 - Added: Packing slips are now available for labels created from checkout sessions and payment links, in addition to invoices
