@@ -4,6 +4,16 @@ We regularly make updates to Parcelcraft shipping. This page logs the evolution 
 
 ---
 
+## 2.4.5 {% small %}November 13, 2026{% /small %}
+
+- Added: The shipment editor now shows the order's packing list (products, quantities, and the shipping rate the customer chose), so you can check what goes in the box before buying a label
+- Fixed: Orders saved without a destination country (for example, an address with only a ZIP code) opened onto an empty **Review customs** tab reading "No shipments need customs information." A missing country now defaults to your ship-from country, so the address form, the customs check, and the label purchase all use the same destination
+- Fixed: The **Status** and **Sort** filters on the Orders page kept showing the previous choice after being reset
+- Improved: Clearer labels for the tracking email options in notification settings, and the SendGrid option now links to its [setup instructions](/docs/additional-automation/custom-email-notifications)
+- Improved: Performed app-wide grammar audit to match Stripe's App publishing guidelines.
+
+---
+
 ## 2.4.2 {% small %}October 5, 2026{% /small %}
 
 ### Multi-parcel shipments
